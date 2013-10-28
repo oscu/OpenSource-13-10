@@ -1,4 +1,4 @@
-# Hadoop vs.Storm
+# Hadoop vs. Storm
 
 > 组名：Cloud-age  
 > 成员：李国芳(lili6)、陈鲁(loulou886)、柴跃立(ylchai)、王奎量(vfrankwang)
