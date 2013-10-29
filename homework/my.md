@@ -25,3 +25,8 @@ This is a natural paragraph
 with CR.
 
 ![sina.com.cn]
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
