@@ -1,3 +1,5 @@
+联系方式：watanuo@gmail.com
+
 # 题目介绍 #
 本题目是比较两个分布式文件系统 DFS（Distributed File System）。  
 DFS在云计算框架中属于存储层面，介绍如下   
