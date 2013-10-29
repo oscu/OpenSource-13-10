@@ -20,3 +20,8 @@
 
 *    I Like work
      Really
+     
+This is a natural paragraph
+with CR.
+
+![sina.com.cn]
