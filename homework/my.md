@@ -13,10 +13,8 @@
 * d1
 * d2
 
-*   L Love DouDou
-
-    POJO is what?
+*	L Love DouDou
+	POJO is what?
     
-*   L Like work
-
-    Really
+*	L Like work
+	Really
