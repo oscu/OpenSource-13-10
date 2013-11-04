@@ -29,5 +29,5 @@ Referenced from http://www.moosefs.org/contact.html
 
 ## FastDFS：主要讨论区在ChinaUnix，形式比较单一 ##
 
-http://bbs.chinaunix.net/forum-240-1.html
+http://bbs.chinaunix.net/forum-240-1.html  
 https://code.google.com/p/fastdfs/w/list
