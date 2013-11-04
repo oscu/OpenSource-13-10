@@ -1,13 +1,12 @@
-作者：李怡石
-联系方式：watanuo@gmail.com 
-声明：Introduction部分是笔者翻译MooseFS和DFS的官方网站的内容，转载请注明来源。
+作者：李怡石  
+联系方式：watanuo@gmail.com   
+说明：项目放上来很久了，实在没招到组员，所以我只能自己完成了，望老师见谅。
 
 # 题目介绍 #
 本题目是比较两个分布式文件系统 DFS（Distributed File System）。  
 DFS在云计算框架中属于IaaS存储层面，介绍如下   
 
 - [wiki](http://en.wikipedia.org/wiki/Distributed_File_System_(Microsoft\))
-- [百度百科](http://baike.baidu.com/view/771589.htm)
   
 官方网站：  
 [MooseFS](http://www.moosefs.org)    
