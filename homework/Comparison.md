@@ -16,12 +16,11 @@
 |代码托管 | sourcegorge | google code|
 |开发语言 | Perl |C |
 |许可证|  GPL v3 | GPL v3 |
-|社区||[ChinaUnix](http://bbs.chinaunix.net/forum-240-1.html)|
 
 参考：
 
-http://bbs.chinaunix.net/thread-1644309-1-1.html
-http://os.51cto.com/art/201209/355996.htm
-http://os.51cto.com/art/201209/355977.htm
-http://os.51cto.com/art/201209/356431.htm
-http://quanzhong.iteye.com/blog/947306
+http://bbs.chinaunix.net/thread-1644309-1-1.html  
+http://os.51cto.com/art/201209/355996.htm  
+http://os.51cto.com/art/201209/355977.htm  
+http://os.51cto.com/art/201209/356431.htm  
+http://quanzhong.iteye.com/blog/947306  
