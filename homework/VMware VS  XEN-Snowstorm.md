@@ -1,4 +1,4 @@
-# vmware VS  XEN
+# VMware VS  XEN
 	
     * 组名： Snowstorm
      
