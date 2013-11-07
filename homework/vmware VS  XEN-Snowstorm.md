@@ -1,6 +1,6 @@
          vmware VS  XEN 
 	
-	 组名： OpenSource_great
+	 组名： Snowstorm
      
      成员名称 ：
       王真
