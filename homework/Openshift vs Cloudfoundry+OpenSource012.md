@@ -21,8 +21,8 @@ OpenSource012：
 
 ## 项目介绍 ##
 
-- OpenShift
-- CloudFoundry
+- [OpenShift](https://github.com/fc13240/OpenSource-13-10/blob/master/homework/Introduce%20OpenShift.md)
+- [CloudFoundry](https://github.com/fc13240/OpenSource-13-10/blob/master/homework/Introduce%20CloudFoundry.md)
 
 
 官方网站：
