@@ -1,9 +1,9 @@
 # GFS(Google File System)与TFS比较(Taobao File System) #
 
-#组名： 张琦，zhangqi-gy4
+组名： 张琦，zhangqi-gy4
         马晓明，
         张剑，
-        路帅#
+        路帅
 
 - 项目的介绍
   1. GFS   
