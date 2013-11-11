@@ -1,4 +1,10 @@
 # GFS(Google File System)与TFS比较(Taobao File System) #
+
+#组名： 张琦，zhangqi-gy4
+        马晓明，
+        张剑，
+        路帅#
+
 - 项目的介绍
   1. GFS   
         GFS也就是Google File System,是google公司为了存储海量搜索数据而设计的专用文件系统。  
