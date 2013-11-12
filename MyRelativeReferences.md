@@ -28,3 +28,10 @@ http://www.cs.columbia.edu/~salman/publications/tutorial-socc12.pdf
 
 *Eucalyptus, OpenStack, OpenNebula社区活跃度比较*
 [http://www.qyjohn.net/?p=1566](http://www.qyjohn.net/?p=1566)
+
+## OpenSource008分工安排： ##
+1. OpenStack的介绍，OpenNebula的介绍及他们的设计介绍
+2. 功能的比较
+3. 其他比较（如性能比较，社区活跃度比较等）
+4. 成功的应用
+结论大家一起整理
