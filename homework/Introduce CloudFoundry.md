@@ -21,6 +21,10 @@ Cloud Foundry让开发人员专注于编写他们的应用程序，而不必关�
 
 社区开源项目允许任何开发人员访问，评估和贡献。包括整合其他框架，添加应用服务和部署到其他云平台。
 
+技术概览：
+
+![](https://github.com/fc13240/OpenSource-13-10/blob/master/homework/Cloud%20Foundry.jpg)
+
 参考：
 
 [http://www.cloudfoundry.com/about](http://www.cloudfoundry.com/about)。
