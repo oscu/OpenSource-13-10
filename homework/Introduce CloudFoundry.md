@@ -23,7 +23,7 @@ Cloud Foundry让开发人员专注于编写他们的应用程序，而不必关�
 
 技术概览：
 
-![](https://github.com/fc13240/OpenSource-13-10/blob/master/homework/Cloud%20Foundry.jpg)
+![技术概览](https://github.com/fc13240/OpenSource-13-10/blob/master/homework/Cloud%20Foundry.jpg?raw=true)
 
 参考：
 
