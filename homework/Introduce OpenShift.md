@@ -8,6 +8,9 @@ OpenShift分为三种版本：公有云、私有云、开源云。
 
 开源云：开源项目，其基础是公有云和私有云。
 
+技术概览：
+
+
 参考：
 
 [https://www.openshift.com/products](https://www.openshift.com/products)。
