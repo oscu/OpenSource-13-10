@@ -1,12 +1,17 @@
-# GFS(Google File System)与TFS比较(Taobao File System) #
+# 云计算中的分布式文件系统GFS与TFS #
 
-  
-    组名：     
-    张琦  zhangqi-gy4  
-    马晓明  mxm1123 
-    张剑  
-    路帅  lushuai2013 
-
+    小组成员： 
+    	张琦 zhangqi-gy4  
+    	马晓明   mxm1123 
+    	张剑  
+    	路帅 lushuai2013 
+摘要
+# 1.分布式文件系统的主要类型及简介 #
+# 2.分布式文件系统的工作原理 #
+# 社区 #
+# 成功应用 #
+# 结束语 #
+# 参考资料 #
 - 项目的介绍
   1. GFS   
         GFS也就是Google File System,是google公司为了存储海量搜索数据而设计的专用文件系统。  
