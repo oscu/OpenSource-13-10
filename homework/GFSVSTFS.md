@@ -74,14 +74,14 @@
        TFS采用Block存储多分的方式来实现DataServer容错。每个Block会存在多份，一般为3份，并且是分布在不同的DataServer上。每一个写入，必须在所有的Block写入成功才算成功。
 - 社区
     - TFS：  
-    [TaoBao](http://tfs.taobao.org/)  
-    [GitHub](https://github.com/alibaba/tfs)
+    [TaoBao http://code.taobao.org/p/tfs/wiki/index/](http://code.taobao.org/p/tfs/wiki/index/)  
+    [GitHub https://github.com/alibaba/tfs](https://github.com/alibaba/tfs)
     - GFS：  
 - 成功应用
    - TFS  
-      [淘宝](http://www.taobao.com "淘宝")
+      [淘宝 http://www.taobao.com](http://www.taobao.com "淘宝")
    - GFS  
-      [谷歌](http://www.google.com)  
-	  [Gmail](http://gmail.google.com)   
-	  [YouTube](http://www.youtube.com)
+      [谷歌 http://www.google.com](http://www.google.com)  
+	  [Gmail http://gmail.google.com](http://gmail.google.com)   
+	  [YouTube http://www.youtube.com](http://www.youtube.com)
 - 参考资料
