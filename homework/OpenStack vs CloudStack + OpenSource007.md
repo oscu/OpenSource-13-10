@@ -88,17 +88,18 @@ CloudStack开源软件交给Apache软件基金会管理。CloudStack已经有了
 
 ## 功能比较 ##
 Openstack包括5个核心项目，分别是：
-l、Nova - 计算服务
-2、Glance - 镜像服务
-3、Neutron - 网络务
-4、Swift - 对象存储服务
-5、Cinder - 块存储服务
++ l、Nova - 计算服务
++ 2、Glance - 镜像服务
++ 3、Neutron - 网络务
++ 4、Swift - 对象存储服务
++ 5、Cinder - 块存储服务
+
 还包括其它几个子项目，分别是：
-OpenStack Identity (Keystone)
-Metering (Ceilometer)
-Orchestration (Heat)
-OpenStack Dashboard (Horizon)
-OpenStack Common Libraries (Oslo)
++ 1、OpenStack Identity (Keystone)
++ 2、Metering (Ceilometer)
++ 3、Orchestration (Heat)
++ 4、OpenStack Dashboard (Horizon)
++ 5、OpenStack Common Libraries (Oslo)
 
 <table>
 	<tr align="center">
