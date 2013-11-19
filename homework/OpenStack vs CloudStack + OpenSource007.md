@@ -174,12 +174,22 @@ CloudStack开源软件交给Apache软件基金会管理。CloudStack已经有了
 	<tr>
 		<td><strong>发起组织</strong></td>
 		<td>美国国家航空航天局和Rackspace</td>
-		<td>Cloud.com</td>
+		<td>Cloud.com, Citrix</td>
 	</tr>
 	<tr>
 		<td><strong>发起时间</strong></td>
 		<td>2010年7月</td>
 		<td>2010年5月</td>
+	</tr>
+	<tr>
+		<td><strong>开发者</strong></td>
+		<td>openstack.org</td>
+		<td>Apache Software Foundation</td>
+	</tr>
+	<tr>
+		<td><strong>遵循协议</strong></td>
+		<td>Apache License 2.0</td>
+		<td>Apache License 2.0</td>
 	</tr>
 	<tr>
 		<td><strong>兼容问题</strong></td>
