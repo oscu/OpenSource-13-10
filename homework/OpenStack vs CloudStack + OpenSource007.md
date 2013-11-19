@@ -155,6 +155,13 @@ CloudStack开源软件交给Apache软件基金会管理。CloudStack已经有了
 	</tr>
 </table>
 ## 其他比较 ##
+CloudStack项目有30家合作伙伴，包括NTT，瞻博网络，塔塔通信等，其中很多和OpenStack都是有关联的。
+CloudStack 具有与AWS 兼容的本地API设置， OpenStack 也有这样的特点。
+CloudStack是一项可以安装的软件产品，为了推广，Citrix将其提升为一个完全开源的Apache项目。
+
+和CloudStack相比，OpenStack有不够完善的地方。当然对许多像Piston ，Cloudscaling ，这些公司来说
+CloudStack 开源代码是他们产品的基础。OpenStack 更加复杂，对终端用户支持度不够。然而OpenStack 支持高端网络功能，可以为特定的案例提供支持，例如高性能和庞大的分布式计算。OpenStack 也通过
+Apache公开资源。
 <table>
 	<tr align="center">
 		<td><strong>项目名称</strong></td>
