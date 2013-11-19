@@ -87,6 +87,21 @@ CloudStack开源软件交给Apache软件基金会管理。CloudStack已经有了
 内广大CloudStack 爱好者提供了一个沟通交流的平台，并举办中国各大中城市的CloudStack技术沙龙巡回活动。
 
 ## 功能比较 ##
+
+CloudStack经常被当做OpenStack和Eucalyptus的同类提到，实际上三者各有所侧重。CloudStack更意味着
+建设和管理私有云基础设施，而不是提供严格的Amazon Web Services兼容的私有云系统(Eucalyptus)，或
+提供一个大厂商所利用的云建设组件的工具箱(OpenStack)。
+　　
+另一个关键的区别是每个项目的支持者的
+类型。CloudStack的两个主要支持者是其托管者，思杰和ASF。OpenStack的支持者包括硬件和软件厂商：
+红帽，VMware，惠普，戴尔，Rackspace，思科，等等 - 其中许多厂商都有自己的基于的OpenStack产品(
+如惠普融合云)。
+
+大多数Apache CloudStack的用户是云经销商或另一种供应商：Datapipe，SoftLayer(现在是IBM子公司)，
+和GoDaddy，以及日本和英国电信NTT和BT。IBM是OpenStack的支持者，但显然决定让SoftLayer保持其现有
+的CloudStack投资，为IBM的客户提供两种技术。相比之下，思杰在2012年离开了OpenStack，现在完全致力
+于CloudStack。
+
 Openstack包括5个核心项目，分别是：
 + l、Nova - 计算服务
 + 2、Glance - 镜像服务
@@ -176,6 +191,52 @@ CloudStack是一项可以安装的软件产品，为了推广，Citrix将其提�
 和CloudStack相比，OpenStack有不够完善的地方。当然对许多像Piston ，Cloudscaling ，这些公司来说
 CloudStack 开源代码是他们产品的基础。OpenStack 更加复杂，对终端用户支持度不够。然而OpenStack 支持高端网络功能，可以为特定的案例提供支持，例如高性能和庞大的分布式计算。OpenStack 也通过
 Apache公开资源。
+
+### CloudStack ###
+
+CloudStack是一个管理数据中心计算资源的控制台。Zynga、诺基亚研究中心和Cloud Central等许多知名
+
+的信息驱动的公司已经使用CloudStack部署了云。除了拥有自己的API(应用程序编程接口)之外，这个平台
+
+还支持能够把一个亚马逊API转变为CloudStackAPI的CloudBridge Amazon EC2。
+
+主要特点：
+    不依赖于任何管理程序(KVM、XEN、ESXi、OVM和BareMetal)
+    任务(分配和管理权限)、
+    虚拟网络(支持虚拟局域网)
+    资源池(让管理员限制虚拟资源，例如，限制一个账户创建的虚拟机的数量以及分配给一个账户的公共
+
+IP地址的数量，等等)
+    快照和卷
+    虚拟路由器、防火墙和负载均衡器
+    使用主机维护进行动态迁移
+
+价格：CloudStack将根据GNU Public License v3(GNU公共许可证第三版)免费发布。
+社区：有一个在线社区免费提供及时的技术支持。你可以在论坛中找到许多CloudStack问题的解决方案。
+
+还有一个IRC(互联网中继聊天)频道，欢迎每一个人提出问题。
+说明文件：如果你有基本的技术背景，你使用默认设置安装CloudStack平台是很容易的。如果需要更复杂
+
+的安装，你会遇到一些难题，因为说明文件不包含全部的复杂问题。这个手册提供一步一步的指令，但是
+
+没有提供这个平台总体如何运行的任何信息。
+
+### openstack ###
+OpenStack用于部署云的一个开源软件平台.
+主要特点：
+    能够管理虚拟化的商品服务器资源
+    能够管理局域网
+    虚拟机镜像管理
+    安全组
+    基于任务的访问控制
+    项目与配额
+    通过网络浏览器的VNC(虚拟网络计算机)代理
+
+价格：OpenStack是开源软件并且能够免费下载。
+社区：OpenStack似乎拥有最大的和最活跃的社区。
+说明文件：OpenStack的说明文件有些不完整。由于产品的迅速开发，这个说明文件不能及时地覆盖所有当
+
+前的问题和新特点。你必须经常访问论坛或者使用IRC得到需要的信息。
 <table>
 	<tr align="center">
 		<td><strong>项目名称</strong></td>
