@@ -1,12 +1,11 @@
-         vmware VS  XEN 
-	
-	 组名： Snowstorm
-     
-     成员名称 ：
-      王真 队长（vmware 各项功能对比）
-      马永龙   （提供相关社区活跃度信息）
-      黄梦晞 （ 提供XEN 功能对比）
-          
+VMware & XEN
+
+组名： Snowstorm
+
+成员名称 ：
+王真（组长）
+马永龙
+黄梦晞，MengxiHuang
           
      项目介绍：针对 两大业界知名的虚拟化产品进行多方面的功能对比。
   
