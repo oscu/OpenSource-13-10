@@ -1,11 +1,12 @@
-VMware & XEN
-
+## VMware & XEN  ##
+	
 组名： Snowstorm
-
+    
 成员名称 ：    
-王真（组长）      
-马永龙    
-黄梦晞，MengxiHuang
+  王真    
+  马永龙    
+  黄梦晞，MengxiHuang
+          
           
      项目介绍：针对 两大业界知名的虚拟化产品进行多方面的功能对比。
   
