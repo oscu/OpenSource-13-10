@@ -3,7 +3,7 @@
 组名： Snowstorm
     
 成员名称 ：    
-  王真    
+  王真   (队长） wzfinish
   马永龙    
   黄梦晞，MengxiHuang
           
