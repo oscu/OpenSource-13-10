@@ -7,6 +7,8 @@
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;王加兵 wangjiabing
 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;刘志安 james-liuzhian
+
 
 ## 项目介绍 ##
 ####OpenStack 介绍####
@@ -225,9 +227,37 @@
 &emsp;&emsp;调度反馈信息，如果被tag的某个vm调度失败了，会反馈失败信息。
 
 
-## 其他比较 ##
+##OpenStack、OpenNebula社区活跃度比较
 
-## 结合自身需要评估后的结论 ##
+&emsp;&emsp;通过论坛和邮件列表的数据源和Git数据源的原始数据对OpenStack和OpenNebula项目过去12个月的社区活跃度进行分析和比较。
+###官方论坛和邮件列表数据源分析
+####主题数和帖子数
+&emsp;&emsp;两个项目每个月所产生的讨论主题数和帖子数，在过去12个月中，OpenStack的主题数和帖子数约为1200和 3300，OpenNebula的主题数和帖子数约为150和 400；OpenStack和OpenNebula相关的讨论数量不在同一水平上； 与OpenStack相关的讨论数量远大于与OpenNebula相关的讨论数量。
+####社区参与度
+&emsp;&emsp;平均意义上的“讨论帖子数/讨论主题数”则反映了一个社区的参与程度，称之为参与度（Participation Ratio）。在过去12个月中OpenStack项目的参与度相对较高，接近于3；OpenNebula项目的参与度相对较低，略高于2。整体上OpenStack项目的参与度一直高于OpenNebula。
+####参与论坛或者邮件列表讨论的总人数
+&emsp;&emsp;两个项目每个月参与论坛或者邮件列表讨论的总人数，OpenStack的活跃用户数量为800，OpenNebula项目的活跃用户数量为80。OpenStack的活跃用户数量要远大于OpenNebula。在过去六个月中， OpenStack项目的活跃用户数量都有不同程度的攀升，OpenNebula项目的活跃用户数量变化不大。
+####社区人口数
+&emsp;&emsp;这两个项目的社区人口数，OpenStack项目的社区人口为3800，而OpenNebula项目的社区人口为1200，相对较低。
+####新增加社区人口数
+&emsp;&emsp;这两个项目每个月新增加的社区人口数量，OpenStack为280人，OpenNebula为50人。在过去三个月中， OpenStack的社区人口增长速度较快，与之相比OpenNebula的社区人口增长较为缓慢。
+####活跃人口数
+&emsp;&emsp;OpenStack和OpenNebula两个项目进行对比，OpenStack的社区人口比OpenNebula要多；在过去一个季度和一个月份中，OpenStack的活跃人口都是最多，分别为1600和800， OpenNebula分别为150和100。
+####项目的粘性
+&emsp;&emsp;OpenStack与OpenNebula这两个项目的新增人口占当月活跃用户的30%左右，基本相当，如果不考虑社区人口的规模的话，可以认为OpenStack与OpenNebula项目的粘性相当。
+####社区活跃度指数
+&emsp;&emsp; “社区活跃度指数”这个参数是以上几个参数的组合, 社区活跃度指数最高的项目，是最活跃的项目。目前OpenStack项目的“社区活跃度指数”最高（以明显的优势领先）为7.97，而OpenNebula为1.4。
+###Git数据源分析
+####提交（commit）操作的次数
+&emsp;&emsp;两个项目每个月进行提交（commit）操作的次数的对比,总体来看，OpenStack项目提交代码的频率较高。在过去12个月中，这个项目每个月进行提交操作的次数维持在600上下。OpenNebula项目提交代码的频率较低，平均每个月提交代码200次左右。
+####提交代码的人数
+&emsp;&emsp;两个项目每个月提交代码的人数的对比。总体来看，OpenStack项目提交代码的人数远远超过其他项目，并且一直保持迅猛增长的势头。OpenNebula项目提交代码的人数相对较少，并且在过去12个月当中基本上没有增长。
+####贡献机构
+&emsp;&emsp;人们通常通过代码贡献者所使用的电子邮件地址来识别其所在的机构。这两个项目每个月向本文所述四个项目提交代码（commit操作）的邮件地址所属域名数量。总体来看，OpenStack项目提交代码的域名数量远远超过其他项目，并且一直保持迅猛增长的势头。OpenNebula项目提交代码的域名数量相对较少，并且在过去12个月当中基本上没有增长。
+&emsp;&emsp;从OpenStack和OpenNebula这两个项目贡献代码次数最多的机构看， OpenNebula属于以单一机构（opennebula.org）为主导的开源项目，而OpenStack属于由多家机构共同合作的开源项目。对于OpenStack项目来说，来自IBM的贡献占了14%，来自RedHat的贡献占了12%，来自Mirantis的贡献占了9%，来自HP的贡献占了5%。
+###结果
+&emsp;&emsp;从以上的两种数据源和多个指标进行对比后可以看出，OpenStack社区的活跃度远大于OpenNebula社区的活跃度。
+
 
 ## 实际应用 ##
 ####OpenStack开源云技术在新浪的应用####
@@ -276,8 +306,6 @@
 &emsp;&emsp;凌云系统目前已经在国内若干家科研单位生产性使用。为促进中国云计算产业的发展，加强学术界与产业界的交流，研究团队决定将系统逐步开源。凌云首个开源版本已于 2011 年 5 月正式上线，以 Apache License 2.0 授权发布，是国内首款开源的 Iaas 云计算系统。系统主体采用 SOA 架构，使用 Java 技术路线实现；虚拟化实现基于 Xen 平台，并使用 OpenNebula 管理虚拟机群。未来版本还将继续开放其他特色鲜明的功能模块。
 
 
-
-
 ## 组员贡献 ##
 
 丁林斌： 项目介绍
@@ -285,6 +313,9 @@
 韦润酥： 功能比较
 
 王加兵： 实际应用
+
+刘志安： 社区活跃度比较
+
 
 ## 参考资料 ##
 
@@ -296,3 +327,5 @@ References:
 4. http://en.wikipedia.org/wiki/OpenNebula
 5. http://opennebula.org/documentation:archives:rel2.0:architecture
 6. http://www.qyjohn.net/?p=1263
+7. http://www.csdn.net/article/2013-07-04/2816105-OpenStack-OpenNebula-Eucalyptus-CloudStack
+8. http://www.qyjohn.net/?p=3297
