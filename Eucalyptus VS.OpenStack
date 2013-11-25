@@ -1,0 +1,18 @@
+Eucalyptus(按树云服务环境)
+
+　　Eucalyptus是加利福尼亚大学的Daniel Nurmi等人实现的，是一个用于实现云计算的开源软件基础设施。Eucalyptus是Amazon EC2的一个开源实现，它与EC2的商业服务接口兼容。Eucalyptus是一个面向研究社区的软件框架，它不同于其他的IaaS云计算系统，能够在已有的常用资源上进行部署，Eucalyptus采用模块化的设计，它的组件可以进行替换和升级，为研究人员提供了一个进行云计算研究的很好的平台。Eucalyptus的设计目标是容易扩展、安装和维护。和EC2一样，Eucalyptus 依赖于Linux和Xen进行操作系统虚拟化。
+
+　　Eucalyptus 包含五个主要组件，它们能相互协作共同提供所需的云服务。这些组件使用具有 WS-Security 的 SOAP 消息传递安全地相互通信。
+
+Cloud Controller (CLC)
+　　在 Eucalyptus 云内，这是主要的控制器组件，负责管理整个系统。它是所有用户和管理员进入 Eucalyptus 云的主要入口。所有客户机通过基于 SOAP 或 REST 的 API 只与 CLC 通信。由 CLC 负责将请求传递给正确的组件、收集它们并将来自这些组件的响应发送回至该客户机。这是 Eucalyptus 云的对外 “窗口”。
+Cluster Controller (CC)
+　　Eucalyptus 内的这个控制器组件负责管理整个虚拟实例网络。请求通过基于 SOAP 或 REST 的接口被送至 CC。CC 维护有关运行在系统内的 Node Controller 的全部信息，并负责控制这些实例的生命周期。它将开启虚拟实例的请求路由到具有可用资源的 Node Controller。
+Node Controller (NC)
+　　它控制主机操作系统及相应的 hypervisor（Xen 或最近的 KVM，很快就会支持 VMWare）。必须在托管了实际的虚拟实例（根据来自 CC 的请求实例化）的每个机器上运行 NC 的一个实例。
+Walrus (W)
+　　这个控制器组件管理对 Eucalyptus 内的存储服务的访问。请求通过基于 SOAP 或 REST 的接口传递至 Walrus。
+Storage Controller (SC)
+　　Eucalyptus 内的这个存储服务实现 Amazon 的 S3 接口。SC 与 Walrus 联合工作，用于存储和访问虚拟机映像、内核映像、RAM 磁盘映像和用户数据。其中，VM 映像可以是公共的，也可以是私有的，并最初以压缩和加密的格式存储。这些映像只有在某个节点需要启动一个新的实例并请求访问此映像时才会被解密。
+　　一个 Eucalyptus 云安装可以聚合和管理来自一个或多个集群的资源。一个集群 是连接到相同 LAN 的一组机器。在一个集群中，可以有一个或多个 NC 实例，每个实例管理虚拟实例的实例化和终止。
+(https://github.com/eucalyptus/eucalyptus)
