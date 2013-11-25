@@ -48,6 +48,17 @@ JobTracker将Mapper和Reducers分配给空闲的TaskTracker后，由TaskTracker�
 降低了任务对网络带宽的需求， 避免了使网络带宽成为瓶颈， 所以“本地计算” 可以说是节约带宽最有效的方式，业界称为“移动计算比移动数据更经济”。 也正式如此，
 split通常情况下应该小于或者等于HDFS数据块的大小（默认情况下64MB）， 从而保证split不会跨越两台计算机存储， 便于“本地计算”。
 
+#### 3 Shuffle过程
+MapReduce会将Mapper的输出结果按照key值分成R份（R是预先定义的Reducer的个数）， 划分时常使用哈希函数， 如Hash（key） mod R。 这样可以保证某一个范围内的key一定由某个Reducer来处理， 从而简化Reduce的过程。
+
+#### 4 合并Mapper输出
+正如之前所说， 带宽资源非常的宝贵， 所以MapReduce允许在Shuffle之前对结果进行合并（Combine过程）， 即将中间结果中有相同key值的多组<key,value>对合并成一对。 Combine过程和Reduce过程类似，很多情况下可以直接使用reduce函数，但Combine过程是Mapper的一部分，在map函数之后执行。 Combine过程通常情况下可以有效地减少中间结果的数量，从而减少数据传输过程中的网络流量。 值得注意的是， Hadoop并不保证其会对一个Mapper输出执行多少次Combine过程， 值得注意的是， Hadoop并不保证其会对一个Mapper输出执行多少次Combine过程， 也就是说， 开发人员必须保证不论Combine过程执行多少次，得到的结果都是一样的。
+
+#### 5 读取中间的结果
+
+在完成Combine和Shuffle的过程后， Mapper的输出结果被直接写到本地磁盘。 然后，通知JobTracker中间结果文件的位置， 再由JobTracker告知Reducer到哪个DataNode上去取中间结果。 注意所有的Mapper产生的中间结果均按其key值同一个哈希函数划分成R份， R个Reducer各自负责一段key值区间。 每个Reducer需要向多个Mapper节点取得落在其负责的key值区间的中间结果， 然后执行reduce函数， 形成一个最终的结果文件。
+
+
 
 
 
