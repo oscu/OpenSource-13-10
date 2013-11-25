@@ -58,6 +58,10 @@ MapReduce会将Mapper的输出结果按照key值分成R份（R是预先定义的
 
 在完成Combine和Shuffle的过程后， Mapper的输出结果被直接写到本地磁盘。 然后，通知JobTracker中间结果文件的位置， 再由JobTracker告知Reducer到哪个DataNode上去取中间结果。 注意所有的Mapper产生的中间结果均按其key值同一个哈希函数划分成R份， R个Reducer各自负责一段key值区间。 每个Reducer需要向多个Mapper节点取得落在其负责的key值区间的中间结果， 然后执行reduce函数， 形成一个最终的结果文件。
 
+#### 6 任务管道
+R个Reducer会产生R个结果， 很多情况下这个R结果并不是所需要的最终结果。而是会将这个R个结果作为另一个计算任务的输入， 并开始另一个MapReduce任务。
+
+
 
 
 
@@ -70,5 +74,10 @@ MapReduce会将Mapper的输出结果按照key值分成R份（R是预先定义的
 ## 组员贡献 ##
 
 ## 参考资料 ##
+【1】 刘鹏云计算（第二版）[M]. 北京： 电子工业出版社，2011
+【2】 Tom White 著， 周敏、周傲英译。hadoop权威指南（中文版）[M]. 北京：清华大学出版社， 2010
+【3】 曹羽中。 用Hadoop 进行分布式并行编程[OL].  [链接地址](https://www.ibm.com/developerworks/cn/opensource/os-cn-hadoop1/)
+
+
 
       
