@@ -10,6 +10,19 @@
 
 ## 项目介绍 ##
 
+Elastic Utility Computing Architecture for Linking Your Programs To Useful Systems （Eucalyptus） 是一种开源的软件基础结构，用来通过计算集群或工作站群实现弹性的、实用的云计算。它最初是美国加利福尼亚大学 Santa Barbara 计算机科学学院的一个研究项目，现在已经商业化，发展成为了 Eucalyptus Systems Inc。不过，Eucalyptus 仍然按开源项目那样维护和开发。Eucalyptus Systems 还在基于开源的 Eucalyptus 构建额外的产品；它还提供支持服务。
+Eucalyptus云计算软件，在一个平台上（分为open source版和enterprise版），提供了对这些资源的抽象。Eucalyptus的源码是公开的。并且有提供给CentOS 5，Debian squeeze，OpenSUSE 11，Fedora 12的软件包。
+Eucalyptus选择Xen和KVM作为虚拟化的管理程序。目前版本是3.2。Eucalyptus的enterprise版已经对vSphere ESX/ESXi提供了支持。
+
+OpenStack是一个美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由软件和开放源代码项目。
+OpenStack是一个云平台管理的项目，它不是一个软件。这个项目由几个主要的组件组合起来完成一些具体的工作。
+OpenStack是一个旨在为公共及私有云的建设与管理提供软件的开源项目。它的社区拥有超过130家企业及1350位开发者，这些机构与个人都将OpenStack作为基础设施即服务（简称IaaS）资源的通用前端。OpenStack项目的首要任务是简化云的部署过程并为其带来良好的可扩展性。本文希望通过提供必要的指导信息，帮助大家利用OpenStack前端来设置及管理自己的公共云或私有云。
+OpenStack 是由 Rackspace 和 NASA 共同开发的云计算平台，帮助服务商和企业内部实现类似于 Amazon EC2 和 S3 的云基础架构服务(Infrastructure as a Service, IaaS)。OpenStack 包含两个主要模块：Nova 和 Swift，前者是 NASA 开发的虚拟服务器部署和业务计算模块；后者是 Rackspace开发的分布式云存储模块，两者可以一起用，也可以分开单独用。OpenStack 是开源项目，除了有 Rackspace 和 NASA 的大力支持外，后面还有包括 Dell、Citrix、 Cisco、 Canonical 这些重量级公司的贡献和支持，发展速度非常快。
+
+## 功能比较 ##
+
+## 其他比较 ##
+
 社区版采用GPLv3授权协议 社区版不需要安装许可
 
 一、授权协议和许可证管理
@@ -83,10 +96,6 @@
 > OpenStack Object Store可以利用通用服务器搭建可扩展的海量数据仓库，并且通过冗余来保证数据的安全性。同一份数据的在多台服务器上都有副本，将出现故障的服务器从集群中撤除不会影响数据的完整性，加入新的服务器后系统会自动地在新的服务器上为相应的文件创建新的副本。从功能上讲，OpenStack Object Store同时具备Eucalyptus中的Walrus服务和弹性块设备(SC)服务。不过OpenStack Object Store不是一个文件系统，不能够保证数据的实时性。从这个方面来考虑，OpenStack Object Store更适合用于存储需要长期保存的静态数据，例如操作系统映像文件和多媒体数据。
 
 > OpenStack通过Agent的方式来管理计算资源。在每一个计算节点上，都需要运行nova-network服务和nova-compute服务。这些服务启动之后，就可以通过消息队列来与云控制器进行交互。
-
-## 功能比较 ##
-
-## 其他比较 ##
 
 ## 结合自身需要评估后的结论 ##
 
