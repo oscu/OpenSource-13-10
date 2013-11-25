@@ -32,6 +32,23 @@ MapReduce采用“分久必合”的思想，把对大规模数据集的操作�
 在Map阶段，MapReduce框架将任务的输入数据分割成固定大小的片段（splits）， 随后将每个split进一步分解成一批键值对<K1,V1>. Hadoop为每个split创建一个Map任务， 也就是Mapper， 用于执行用户自定义的map函数， 并将对应split中的<K1,V1>对作为输入，得到计算的中间结果<K2,V2>。接着将中间结果按照K2进行排序，并将key值相同的value放在一起形成一个新列表， 形成<K2,list<V2>>元组。 最后再根据key值的范围将这些元组进行分组，对应不同的Reduce任务。
 
 ####Reduce
+在Reduce阶段， Reducer吧不同Mapper接收来的数据整合在一起并进行排序，然后调用用户自定义的reduce函数， 对输入的<K2,list<V2>>对进行相应的处理，
+得到键值对<K3,V3>并输出到HDFS上。既然Mapduce框架为每个split创建一个Mapper,那么谁来确定Reducers的数目呢？ 答案是用户。
+mapred-site.xml配置文件中有一个表示Reducers的数目的属性 mapred.reduce.tasks, 该属性的默认值为1， 开发人员可以通过job.setNumReduceTasks()方法重新设置该值。
+
+##MapReduce的集群行为
+MapReduce运行大规模集群之上， 要完成一个并行计算， 还需要任务调度， 本地计算、 Shuffle（洗牌）过程等一系列环节共同支撑计算的过程。暂且称为MapReduce的集群行为。
+
+#### 1 任务调度与执行
+MapReduce任务由一个JobTracker和多个TaskTracker两类节点控制完成。 JobTracker主要负责调度和管理TaskTracker， 它通常情况下运行在Master节点上。
+JobTracker将Mapper和Reducers分配给空闲的TaskTracker后，由TaskTracker负责这些任务的并行执行。 TaskTracker必须运行在DataNode上， 所以DataNode即是数据的存储节点， 也是计算节点。 JobTracker也负责监控任务的运行状况，如果某个TaskTracker发生故障，JobTracker就会将其负责的任务分配给其他空闲的TaskTracker重新执行。 MapReduce框架的这种设计很适合于集群上任务的调度和执行， 当然JobTracker的故障将引起整个任务失败， 在Hadoop以后的发行版本中或许会通过运行多个JobTracker解决这个问题。
+
+#### 2 本地计算
+把计算节点和数据节点置于同一台计算机上，MapReduce框架尽最大的努力保证在那些存储了数据的节点上执行计算任务。 这种方式有效的减少了数据在网络中传输，
+降低了任务对网络带宽的需求， 避免了使网络带宽成为瓶颈， 所以“本地计算” 可以说是节约带宽最有效的方式，业界称为“移动计算比移动数据更经济”。 也正式如此，
+split通常情况下应该小于或者等于HDFS数据块的大小（默认情况下64MB）， 从而保证split不会跨越两台计算机存储， 便于“本地计算”。
+
+
 
 
 
