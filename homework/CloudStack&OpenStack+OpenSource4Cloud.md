@@ -8,14 +8,65 @@
         
                     2. 刘成全，id
                     
-                    3. 职承立，id
+                    3. 职承立，zhichengli
                     
 ## 项目介绍 ##
- cloudstack和openstack都是开源云平台。CloudStack的前身是Cloud com，后被思杰收购，现由Apache软件基金会管理；OpenStack是美国国家航空航天局和Rackspace合作研发的项目，它由几个主要的组件组合起来完成具体的工作,核心组件有以下几个，Nova，Swift，Glance，Keystone，Horizon，Quantum&Melange。另外还有一些社区项目，因为篇幅有限，本次不做介绍。 
+ 
+**CloudStack** 
+
+–2008年由Cloud.com开发，有商业和开源两个版本。开源版本采用GPL v2 license 
+
+–2011年7月Cloud.com被Citrix(思杰)收购，CloudStack全部开源 
+
+–2012年4月Citrix将CloudStack贡献给Apache基金会，改为Apache 2.0 license 
+
+**OpenStack** 
+
+–Rackspace和NASA合作研发，2010年10月开源，采用Apache 2.0 license 
+
+–2011年Rackspace宣布成立OpenStack基金会，将OpenStack贡献给该基金会
+
+-核心组件有以下几个，Nova，Swift，Glance，Keystone，Horizon，Quantum&Melange，还包括一些社区项目
 
 
 ## 其他比较 ##
- 本文主要从三方面功能来对两个项目进行介绍，分别是资源管理、存储设计和网络管理。
+整体比较
+
+
+* 比较项  	| CloudStack	| OpenStack
+
+* 服务层次	|IaaS	       |  IaaS
+
+* 授权协议	| Apache 2.0	| Apache 2.0
+
+* 许可证	| 不需要	| 不需要
+
+* 动态资源调配	| 主机Maintainance模式下自动迁移VM	| 无现成功能，需通过Nova-scheduler组件自己实现
+
+* VM模板	| 支持	| 支持
+
+* VM Console	| 支持	| 支持
+
+* 开发语言	| Java	| Python
+
+* 用户界面	|Web Console,功能较完善	| DashBoard，较简单
+
+* 负载均衡	| 软件负载均衡(Virtual Router)、硬件负载均衡	| 软件负载均衡(Nova-network或 OpenStack Load Balance API)、硬件负载均衡
+
+* 虚拟化技术	| XenServer,Oracle VM，vCenter,KVM,Bare Metal	| XenServer,Oracle VM,KVM,QEMU,ESX/ESXi,LXC(Liunx Container)等
+
+* 最小化部署	| 一管理节点，一主机节点	|支持All in one（Nova,Keystone,Glance组件必选）
+
+* 支持数据库	| MySQL	| PostgreSQL,MySQL,SQLite
+
+* 组件	| Console Proxy VM,Second Storage VM,Virtual Router VM,Host Agent,Management Server	| Nova,Glance,Keystone,Horizon,Swift
+
+* 网络形式	| Isolation（VLAN），Share |	VLAN,FLAT,FLATDhcp
+
+* 版本问题	| 版本发布稳定，不存在兼容性问题	| 存在各版本兼容性问题
+ 
+* VLAN	不能VLAN间互访	支持VLAN间互访
+
 
 ## 结合自身需要评估后的结论 ##
 个人看法“因为OpenStack是多组件，所以灵活性比CloudStack要高，而CloudStack把数据中心虚拟化，对物理资源和虚拟资源有着完整的生命周期管理，所以他们各有自己的特点，各有优势。
