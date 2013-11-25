@@ -71,11 +71,11 @@
 
 **CloudStack：**
 
-   CloudStack把存储分成了主存储与二级存储. 根据Hypervisor种类的不同, 主存支持不同的磁盘镜像格式。iSCSI和FC-San存储在Xenserver中被加载为clustered LVM格式，此种格式下，不支持存储的超配。如果存储支持XenServer的thin-provisioning，对于每个磁盘是链式存储，对磁盘的copy等操作，都会基于该磁盘生成一个新的链，新加内容写入新的链中，所以支持存储超配。
+   CloudStack把存储分成了主存储与二级存储。根据Hypervisor种类的不同, 主存支持不同的磁盘镜像格式。iSCSI和FC-San存储在Xenserver中被加载为clustered LVM格式，此种格式下，不支持存储的超配。如果存储支持XenServer的thin-provisioning，对于每个磁盘是链式存储，对磁盘的copy等操作，都会基于该磁盘生成一个新的链，新加内容写入新的链中，所以支持存储超配。
    
    _两种存储的功能：_
    
-   主存储主要用来存放虚拟机的磁盘镜像,二级存储用来存放template，snapshot和需要下载的volume。二级存储不直接挂载到hyperviser上，需要由management server或ssvm来进行操作
+   主存储主要用来存放虚拟机的磁盘镜像，二级存储用来存放template，snapshot和需要下载的volume。二级存储不直接挂载到hyperviser上，需要由management server或ssvm来进行操作
 
 **OpenStack：**
 
@@ -93,8 +93,9 @@ Cinder通过添加不同厂商的指定drivers来为了支持不同类型和型�
 
 
 ## 结合自身需要评估后的结论 ##
-（刘成全部分）
-个人看法“因为OpenStack是多组件，所以灵活性比CloudStack要高，而CloudStack把数据中心虚拟化，对物理资源和虚拟资源有着完整的生命周期管理，所以他们各有自己的特点，各有优势。
+
+   截至目前OpenStack在市场宣传、影响力方面远胜过CloudStack，支持伙伴、社区开发人数及讨论话题数、活跃程度等也高于CloudStack，但
+CloudStack的平台成熟度要优于OpenStack，CloudStack的用户体验及安装容易度也都比OpenStack要好，并已在更具生产实际的环境中得到了充分验证，而OpenStack到目前为止则更像是仍处于研发阶段难以称为“成熟的产品化的IT产品”。
 
 
 ## 组员贡献 ##
