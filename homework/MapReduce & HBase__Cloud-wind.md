@@ -154,7 +154,9 @@ HLogFile
 
 ![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0100.jpg)
 
-上图中示意了HLog文件的结构，
+上图中示意了HLog文件的结构，其实HLog文件就是一个普通的Hadoop Sequence File，Sequence File 的Key是HLogKey对象，HLogKey中记录了写入数据的归属信息，除了table和region名字外，同时还包括 sequence number和timestamp，timestamp是“写入时间”，sequence number的起始值为0，或者是最近一次存入文件系统中sequence number。
+
+HLog Sequece File的Value是HBase的KeyValue对象，即对应HFile中的KeyValue，可参见上文描述。
 
 ## 其他比较 ##
 
