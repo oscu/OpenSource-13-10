@@ -144,8 +144,6 @@ Wiki百科：
 >>- [GitHub](https://github.com/cloudfoundry/cf-release)
 
 ###2. [架构比较](https://github.com/SampsonAmir/OpenSource-13-10/blob/master/homework/Architecture%20about%20OpenShift%20vs%20CloudFoundry%20.md) ###
-## 结合自身需要评估后的结论 ##
-
 
 ## 实际应用 ##
 
@@ -168,6 +166,9 @@ Wiki百科：
 + http://88250.b3log.org/openshift-tech-architecture-overview
 + https://access.redhat.com/site/documentation/en-US/OpenShift/2.0/html/User_Guide/index.html
 + http://openshift.github.io/documentation/oo_system_architecture_guide.html
+
+## 结合自身需要评估后的结论 ##
+无
 
 ## 组员贡献 ##
 方超： 项目介绍
