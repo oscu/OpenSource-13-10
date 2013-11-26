@@ -4,7 +4,7 @@
 组内成员： 王兴朝 王彬 邱丹  盛敏智
 
 ## 项目介绍 ##
-我们知道Hadoop是一个能够对大亮数据进行分布式处理的软件框架，实现Google了的MapReduce编程模型和框架，能够把应用程序分割成许多小的工作单元，并把这些单元放到任何集群节点上执行。 
+我们知道Hadoop是一个能够对大亮数据进行分布式处理的软件框架，实现Google了的MapReduce编程模型和框架，能够把应用程序分割成许多小的工作单元，并把这些单元放到任何集群节点上执行。
 
 在MapReduce中，一个准备提交执行的应用程序称为“作业（job）”， 而从一个作业划分出的、运行于各个计算节点的工作单元称为“任务task”。此外，Hadoop提供的分布式各个系统（HEFS）主要负责各个节点上的数据存储，并实现了高吞吐率的数据读写， 我们小组主要介绍的是Hadoop中两个重要的技术，一个是MapReduce;另一个是HBase；
 
@@ -96,11 +96,11 @@ HBase是按照存储的稀疏行/列矩阵，物理模型实际上就是把概�
 ![Smaller icon](http://ww1.sinaimg.cn/large/62ca154djw1eay93vz8szj20ho06tt96.jpg)
 
  Row Key: 行键，Table的主键，Table中的记录按照Row Key排序
- 
+
  Timestamp: 时间戳，每次数据操作对应的时间戳，可以看作是数据的version number
- 
+
  Column Family：列簇，Table在水平方向有一个或者多个Column Family组成。  一个Column Family中可以由任意多个Column组成，即Column Family支持动态扩展，无需预先定义Column的数量以及类型，所有Column均以二进制格式存储，用户需要自行进行类型转换。
- 
+
 ###HBase系统架构
 
 ![Smaller icon](http://www.searchtb.com/wp-content/uploads/2011/01/image0050.jpg)
@@ -134,7 +134,13 @@ HBase中的所有数据文件都存储在Hadoop HDFS文件系统上，主要包�
 
 2. HLog File，HBase中WAL（Write Ahead Log） 的存储格式，物理上是Hadoop的Sequence File
 
-      
+HFile
+
+下图是HFile的存储格式：
+
+![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0080.jpg)
+
+首先HFile文件是不定长的，长度固定的只有其中的两块：Trailer和FileInfo。正如图中所示的，Trailer中有指针指向其他数据块的起始点。File Info中记录了文件的一些Meta信息，例如：AVG_KEY_LEN, AVG_VALUE_LEN, LAST_KEY, COMPARATOR, MAX_SEQ_ID_KEY等。Data Index和Meta Index块记录了每个Data块和Meta块的起始点。
 
 ## 其他比较 ##
 
@@ -151,4 +157,4 @@ HBase中的所有数据文件都存储在Hadoop HDFS文件系统上，主要包�
 
 
 
-      
+
