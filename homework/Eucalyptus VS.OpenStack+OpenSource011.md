@@ -179,7 +179,11 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 > OpenStackÍ¨¹ýAgentµÄ·½Ê½À´¹ÜÀí¼ÆËã×ÊÔ´¡£ÔÚÃ¿Ò»¸ö¼ÆËã½ÚµãÉÏ£¬¶¼ÐèÒªÔËÐÐnova-network·þÎñºÍnova-compute·þÎñ¡£ÕâÐ©·þÎñÆô¶¯Ö®ºó£¬¾Í¿ÉÒÔÍ¨¹ýÏûÏ¢¶ÓÁÐÀ´ÓëÔÆ¿ØÖÆÆ÷½øÐÐ½»»¥¡£
 
 ## ½áºÏ×ÔÉíÐèÒªÆÀ¹ÀºóµÄ½áÂÛ ##
+EucalyptusµÄ¼Ü¹¹ÓÉÎå¸ö²¿·Ö×é³É£¬ÓëAWSÀàËÆ£¬°²×°ÄÑ¶ÈÎªÖÐµÈË®Æ½£¬ÆäGUI¹ÜÀí¹¦ÄÜÓÐÏÞ£¬ÐèÒª´óÁ¿À´×ÔÏàÓ¦ÃüÁîÐÐµÄ°ïÖú¡£´ËÍâ£¬Eucalyptus»¹ÓÐÒ»¸öÃÜÔ¿¹ÜÀí°²È«Ä£Ê½¡£ÔÚ¸ÃÄ£Ê½ÖÐ£¬Îå¸ö¼Ü¹¹×é¼þÐèÒª±Ë´Ë×¢²á¡£EucalyptusµÄÕûÌå¶È¸üºÃ¡£ÁíÍâ£¬Í¨¹ýCLC£¬Eucalyptus¿ÉÒÔÖ§³Ö¼¯ÈºµÄ¼¯Èº£¬ËùÒÔ£¬EucalyptusµÄÀ©Õ¹ÐÔ¸üÇ¿£¬¸üÈÝÒ×Âú×ãÒµÎñÀ©Õ¹µÄÐèÒª¡£
 
+OpenstackÏîÄ¿·¢Õ¹½Ï¿ì£¬Ò²µÃµ½ÁË½Ï¶à´óµÄ³§ÉÌÖ§³Ö¡£µ«openstackµÄÄ£¿é½á¹¹Ïà¶ÔËéÆ¬»¯£¬°²×°ÄÑ¶È½Ï¸ß¡£
+
+Òò´Ë£¬×ÛºÏÆÀ¹Àºó£¬EucalyptusÊÇÒ»Ì×ÍêÕûµÄ¼¼Êõ½â¾ö·½°¸£¬±ÈOpenStack¸üÈÝÒ×±»ÓÃ»§Ëù½ÓÊÜ¡£Òò´Ë£¬Eucalyptus¸üÊÊºÏ×÷Îªµ±Ç°Ò»¶ÎÊ±¼äÄÚµÄ»ìºÏÔÆÆ½Ì¨¡£
 ## ×éÔ±¹±Ï× ##
 
 ## ²Î¿¼×ÊÁÏ ##
