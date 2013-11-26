@@ -77,6 +77,13 @@ CloudStack开源软件交给Apache软件基金会管理。CloudStack已经有了
 + Virtual routers, firewalls, load balancers
 + Multi-role support
 
+#### *兼容性* ####
++ CloudStack可以管理多种Hypervisor的虚拟化程序，并支持这些虚拟化程序所兼容的计算服务器。
+
++ CloudStack建立虚拟机所使用的主存储可以使用计算服务器自己的本地磁盘，也可以挂载iSCSI，光纤，NFS存储。存放光盘镜像模版的二级存储可以使用NFS外，还可以使用Openstack的swift组件。
+
++ Cloudstack除了支持各种网络的连接方式，不需要硬件设备，系统身就会提供多种的网络服务，就可以实现如：网络隔离，防火墙，负载均衡，VPN等功能。并且可以提供给用户自己进行配置，省去了管理员大量的配置工作，节省硬件成本。
+
 #### *CloudStack中国社区* ####
 2012年4月，世界领先的应用服务软件方案提供商Citrix（思杰公司），宣布将CloudStack开源软件加入Apache软件基金会
 ，CloudStack成为行业中首个加入该基金会的云基础设施解决方案。作为国内首家提供CloudStack技术支持及商业版销售的北京天云趋势科技有限公司，
