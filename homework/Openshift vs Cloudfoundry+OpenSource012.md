@@ -146,7 +146,21 @@ Wiki百科：
 ###2. [架构比较](https://github.com/SampsonAmir/OpenSource-13-10/blob/master/homework/Architecture%20about%20OpenShift%20vs%20CloudFoundry%20.md) ###
 ## 结合自身需要评估后的结论 ##
 
-## 组员贡献 ##
+
+## 实际应用 ##
+
+[新浪云平台（SAE）](http://sae.sina.com.cn) 是国内首个公有云计算平台。SAE的Ruby语言运行环境是由Cloud Foundry中国团队和SAE共同运营。该平台支持Ruby 1.8和1.9版本,提供4种编程框架（rail3, Sinatra, rack和standalone共），4种数据服务（MySql, Mongodb, RabbitMQ和Redis）。目前对用户免费公测，每个用户可以具有多达2GB内存和20个应用实例。 
+
+
+[盛大云引擎](http://www.grandcloud.cn/product/ae) 基于Cloud Foundry开源项目建立的云应用平台，旨在降低应用的部署与运维成本，让应用开发者可以专心于业务的开发设计，不再担心后台的构建与运维。云引擎支持PHP，Ruby，Java，Python等语言编写的应用，后端提供丰富的数据存储服务，并根据应用访问量和业务规模进行弹性扩展。
+
+
+[莫怕网(MoPaaS.com)](http://www.mopaas.com) 是为广大移动应用开发者和提供商提供便捷的云应用平台服务，为移动互联网应用的开发，部署和运行提供高效、安全和稳定的云计算应用环境。莫怕网完全基于Cloud Foundry开源项目实现，支持Ruby, Java, Node.js, PHP, Python等多种开发语言。
+
+
+[用友](http://www.ufida.com.cn/) 集团基于Cloud Foundry进行特定的功能扩展，构建出健壮的私有云平台，能够为大中型企业提供具备弹性伸缩的、智能管理的、功能丰富的基础IT架构。用友目前在Cloud Foundry平台上的工作主要集中在企业私有云的服务扩展和传统应用迁移等领域。 
+
+[盛思科技](http://www.seneasy.com/) 是一家专注教育领域的ISV，盛思教育云平台基于Cloud Foundry内核实现，在内核上扩展六大基础服务，即用户管理、单点登录、数据交换、工作流引擎、报表引擎、即时消息，实现对上层教育云应用统一服务支持。在此平台之上，盛思采用Java Spring框架搭建教育类SaaS应用。 
 
 ## 参考资料 ##
 + http://88250.b3log.org/openshift-tech-architecture-overview
@@ -154,3 +168,14 @@ Wiki百科：
 + http://88250.b3log.org/openshift-tech-architecture-overview
 + https://access.redhat.com/site/documentation/en-US/OpenShift/2.0/html/User_Guide/index.html
 + http://openshift.github.io/documentation/oo_system_architecture_guide.html
+
+## 组员贡献 ##
+方超： 项目介绍
+
+史晓莉： 功能比较
+
+王海义： 其他比较
+
+周文剑： 实际应用
+
+
