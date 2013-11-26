@@ -90,8 +90,19 @@ HBase是按照存储的稀疏行/列矩阵，物理模型实际上就是把概�
 
 6、Hive，当前Hive的Release版本尚没有加入对HBase的支持，但在下一个版本Hive 0.7.0中将会支持HBase，可以使用类似SQL语言来访问HBase
 
+###HBase数据模型
 
+#####Table & Column Family
 
+![Smaller icon](http://ww1.sinaimg.cn/large/62ca154djw1eay93vz8szj20ho06tt96.jpg)
+
+ Row Key: 行键，Table的主键，Table中的记录按照Row Key排序
+
+ Timestamp: 时间戳，每次数据操作对应的时间戳，可以看作是数据的version number
+ 
+ Column Family：列簇，Table在水平方向有一个或者多个Column Family组成。  一个Column Family中可以由任意多个Column组成，即Column Family支持动态扩展，无需预先定义Column的数量以及类型，所有Column均以二进制格式存储，用户需要自行进行类型转换。
+ 
+ 
 
 ## 其他比较 ##
 
