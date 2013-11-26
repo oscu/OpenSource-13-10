@@ -126,7 +126,7 @@ Wiki百科：
 ## 其他比较 ##
 
 
-### 1. 社区 ###
+###1. 社区 ###
 
 >>#### OpenShift： ####
 >>- [Forums](https://www.openshift.com/forums/openshift)
@@ -143,8 +143,14 @@ Wiki百科：
 >>- [Pivotal CF Forums](http://support.cloudfoundry.com/home)
 >>- [GitHub](https://github.com/cloudfoundry/cf-release)
 
-### 2. [架构比较](https://github.com/SampsonAmir/OpenSource-13-10/blob/master/homework/Architecture%20about%20OpenShift%20vs%20CloudFoundry%20.md) ###
+###2. [架构比较](https://github.com/SampsonAmir/OpenSource-13-10/blob/master/homework/Architecture%20about%20OpenShift%20vs%20CloudFoundry%20.md) ###
 ## 结合自身需要评估后的结论 ##
 
 ## 组员贡献 ##
 
+## 参考资料 ##
++ http://88250.b3log.org/openshift-tech-architecture-overview
++ http://baike.baidu.com/link?url=124icjYYLxYPEmba3iJ3KHOkUp84uo9Zw8p5z6gAygs6FvqX_kt9HCrrbxFLvCXASGemKQPCtCS47uWzPnyPUa
++ http://88250.b3log.org/openshift-tech-architecture-overview
++ https://access.redhat.com/site/documentation/en-US/OpenShift/2.0/html/User_Guide/index.html
++ http://openshift.github.io/documentation/oo_system_architecture_guide.html
