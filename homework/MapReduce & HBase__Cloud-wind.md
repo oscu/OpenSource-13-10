@@ -77,6 +77,18 @@ HBase以表的形式存储数据， 每个表由行和列组成， 每个列属�
 
 HBase是按照存储的稀疏行/列矩阵，物理模型实际上就是把概念模型中的一个行进行分割，并按照列族存储。
 
+### HBase访问接口
+1、Native Java API，最常规和高效的访问方式，适合Hadoop MapReduce Job并行批处理HBase表数据
+
+2、HBase Shell，HBase的命令行工具，最简单的接口，适合HBase管理使用
+
+3、Thrift Gateway，利用Thrift序列化技术，支持C++，PHP，Python等多种语言，适合其他异构系统在线访问HBase表数据
+
+4、REST Gateway，支持REST 风格的Http API访问HBase, 解除了语言限制
+
+5、Pig，可以使用Pig Latin流式编程语言来操作HBase中的数据，和Hive类似，本质最终也是编译成MapReduce Job来处理HBase表数据，适合做数据统计
+
+6、Hive，当前Hive的Release版本尚没有加入对HBase的支持，但在下一个版本Hive 0.7.0中将会支持HBase，可以使用类似SQL语言来访问HBase
 
 
 
