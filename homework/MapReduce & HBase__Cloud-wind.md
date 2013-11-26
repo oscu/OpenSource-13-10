@@ -128,7 +128,13 @@ HMaster没有单点问题，HBase中可以启动多个HMaster，通过Zookeeper�
 
 ###HBase存储格式
 
+HBase中的所有数据文件都存储在Hadoop HDFS文件系统上，主要包括上述提出的两种文件类型：
 
+1. HFile， HBase中KeyValue数据的存储格式，HFile是Hadoop的二进制格式文件，实际上StoreFile就是对HFile做了轻量级包装，即StoreFile底层就是HFile
+
+2. HLog File，HBase中WAL（Write Ahead Log） 的存储格式，物理上是Hadoop的Sequence File
+
+      
 
 ## 其他比较 ##
 
