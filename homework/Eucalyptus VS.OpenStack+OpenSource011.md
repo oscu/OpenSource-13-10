@@ -183,3 +183,5 @@ OpenstackÏîÄ¿°üÀ¨Èı¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 ## ×éÔ±¹±Ï× ##
 
 ## ²Î¿¼×ÊÁÏ ##
+CloudStack¡¢OpenStackµÈËÄ´óÔÆÆ½Ì¨ÆÀ²â http://www.chinacloud.cn/show.aspx?id=12339&cid=16
+ÍñÙâÇåÑïµÄblog http://www.qyjohn.net/
