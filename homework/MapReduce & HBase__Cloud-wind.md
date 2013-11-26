@@ -150,6 +150,12 @@ HFile里面的每个KeyValue对就是一个简单的byte数组。但是这个byt
 
 开始是两个固定长度的数值，分别表示Key的长度和Value的长度。紧接着是Key，开始是固定长度的数值，表示RowKey的长度，紧接着是RowKey，然后是固定长度的数值，表示Family的长度，然后是Family，接着是Qualifier，然后是两个固定长度的数值，表示Time Stamp和Key Type（Put/Delete）。Value部分没有这么复杂的结构，就是纯粹的二进制数据了。
 
+HLogFile
+
+![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0100.jpg)
+
+上图中示意了HLog文件的结构，
+
 ## 其他比较 ##
 
 ## 结合自身需要评估后的结论 ##
