@@ -63,7 +63,7 @@ R个Reducer会产生R个结果， 很多情况下这个R结果并不是所需要
 
 
 
-# HBase #
+## HBase ##
 
 ###HBase简介
 
@@ -97,12 +97,36 @@ HBase是按照存储的稀疏行/列矩阵，物理模型实际上就是把概�
 ![Smaller icon](http://ww1.sinaimg.cn/large/62ca154djw1eay93vz8szj20ho06tt96.jpg)
 
  Row Key: 行键，Table的主键，Table中的记录按照Row Key排序
-
+ 
  Timestamp: 时间戳，每次数据操作对应的时间戳，可以看作是数据的version number
  
  Column Family：列簇，Table在水平方向有一个或者多个Column Family组成。  一个Column Family中可以由任意多个Column组成，即Column Family支持动态扩展，无需预先定义Column的数量以及类型，所有Column均以二进制格式存储，用户需要自行进行类型转换。
  
- 
+###HBase系统架构
+
+![Smaller icon](http://www.searchtb.com/wp-content/uploads/2011/01/image0050.jpg)
+
+#####Client
+
+HBase Client使用HBase的RPC机制与HMaster和HRegionServer进行通信，对于管理类操作，Client与HMaster进行RPC；对于数据读写类操作，Client与HRegionServer进行RPC
+
+#####Zookeeper
+
+Zookeeper Quorum中除了存储了-ROOT-表的地址和HMaster的地址，HRegionServer也会把自己以Ephemeral方式注册到Zookeeper中，使得HMaster可以随时感知到各个HRegionServer的健康状态。此外，Zookeeper也避免了HMaster的单点问题。
+
+#####HMaster
+
+HMaster没有单点问题，HBase中可以启动多个HMaster，通过Zookeeper的Master Election机制保证总有一个Master运行，HMaster在功能上主要负责Table和Region的管理工作：
+
+1、 管理用户对Table的增、删、改、查操作
+
+2、 管理HRegionServer的负载均衡，调整Region分布
+
+3、 在Region Split后，负责新Region的分配
+
+4、 在HRegionServer停机后，负责失效HRegionServer 上的Regions迁移
+
+
 
 ## 其他比较 ##
 
@@ -112,7 +136,9 @@ HBase是按照存储的稀疏行/列矩阵，物理模型实际上就是把概�
 
 ## 参考资料 ##
 【1】 刘鹏云计算（第二版）[M]. 北京： 电子工业出版社，2011
+
 【2】 Tom White 著， 周敏、周傲英译。hadoop权威指南（中文版）[M]. 北京：清华大学出版社， 2010
+
 【3】 曹羽中。 用Hadoop 进行分布式并行编程[OL].  [链接地址](https://www.ibm.com/developerworks/cn/opensource/os-cn-hadoop1/)
 
 
