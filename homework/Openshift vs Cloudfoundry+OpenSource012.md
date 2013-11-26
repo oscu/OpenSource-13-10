@@ -18,6 +18,25 @@ OpenSource012：
 
 云服务分为三种形式，分别是基础设施即服务(IaaS)，平台即服务(PaaS)和软件即服务(SaaS)，其实作为“中间层”的PaaS，其也可以说是一种SaaS。一般来讲，我们将其定义为：将软件研发的平台作为一种服务，以SaaS的模式提交给用户。
 
+#####国内外知名PaaS平台######
++ 国外
+  * [Microsoft Windows Azure](http://www.windowsazure.com/en-us/)
+  * [Google App Engine](https://developers.google.com/appengine/?hl=zh-CN&csw=1)
+  * [VMware Cloud Foundry](http://www.cloudfoundry.com/)
+  * [Redhat OpenShift](https://www.openshift.com/)
+  * [Force.com](http://www.salesforce.com/platform/overview/)
+  * [Heroku](https://www.heroku.com/)
+  * [Amazon Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/)
+  * [Engine Yard Cloud](https://www.engineyard.com/products/cloud)
+  * [Engine Yard Orchestra]()
+  * [CumuLogic](http://www.cumulogic.com/)
+  
++ 国内
+  * 新浪云  [Sina App Engine（SAE）](http://sae.sina.com.cn/)
+  * 百度应用引擎  [Baidu App Enginee（BAE）](http://developer.baidu.com/service)
+  * 阿里云  [Aliyun Cloud Enginee（ACE）](http://www.aliyun.com/)
+  * 腾讯开放平台  [Q+](http://open.qq.com/reg)
+  * Pispower云平台  [Pispower](http://pispower.onecloud.cn)
 
 ## 项目介绍 ##
 
@@ -102,27 +121,29 @@ Wiki百科：
 
 参考：
 
-[51CTO信息图：OpenShift VS CloudFoundry](http://down.51cto.com/data/466152)
+[51CTO信息图：OpenShift VS CloudFoundry](https://github.com/SampsonAmir/OpenSource-13-10/blob/master/homework/OpenShiftVSCloudFoundry.jpg)
 
 ## 其他比较 ##
 
-### 社区 ###
 
-#### OpenShift： ####
-- [Forums](https://www.openshift.com/forums/openshift)
-- [StackOverflow](http://stackoverflow.com/questions/tagged/openshift)
-- [IRC](http://webchat.freenode.net/?channels=openshift&uio=d4)
-- [Feature Requests](https://www.openshift.com/ideas)
-- [File a bug](https://bugzilla.redhat.com/enter_bug.cgi?product=OpenShift%20Online)
-- [GitHub](http://openshift.github.io/)
+### 1. 社区 ###
 
-#### CloudFoundry： ####
+>>#### OpenShift： ####
+>>- [Forums](https://www.openshift.com/forums/openshift)
+>>- [StackOverflow](http://stackoverflow.com/questions/tagged/openshift)
+>>- [IRC](http://webchat.freenode.net/?channels=openshift&uio=d4)
+>>- [Feature Requests](https://www.openshift.com/ideas)
+>>- [File a bug](https://bugzilla.redhat.com/enter_bug.cgi?product=OpenShift%20Online)
+>>- [GitHub](http://openshift.github.io/)
 
-- [中文博客](http://cnblog.cloudfoundry.com/)
-- [google-group](https://groups.google.com/a/cloudfoundry.org/group/vcap-dev)
-- [Pivotal CF Forums](http://support.cloudfoundry.com/home)
-- [GitHub](https://github.com/cloudfoundry/cf-release)
+>>#### CloudFoundry： ####
 
+>>- [中文博客](http://cnblog.cloudfoundry.com/)
+>>- [google-group](https://groups.google.com/a/cloudfoundry.org/group/vcap-dev)
+>>- [Pivotal CF Forums](http://support.cloudfoundry.com/home)
+>>- [GitHub](https://github.com/cloudfoundry/cf-release)
+
+### 2. [架构比较](https://github.com/SampsonAmir/OpenSource-13-10/blob/master/homework/Architecture%20about%20OpenShift%20vs%20CloudFoundry%20.md) ###
 ## 结合自身需要评估后的结论 ##
 
 ## 组员贡献 ##
