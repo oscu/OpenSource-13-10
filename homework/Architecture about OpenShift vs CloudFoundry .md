@@ -166,4 +166,4 @@ Web 请求到达负载均衡代理 HAProxy 后，它将请求转发给 gear 中�
 
 >> @hello_message_json包括DEA的UUID、ip、por t、版本信息等内容。Cloud Controller、Router、Health Manger及其他模块会监听这个主题，得到通知，各自干活。
 
->> 理解Cloud Foundry的最好方法其实是选定某一操作，如部署一个App、创建服务等，以消息为线索，跟踪到各模块，看其如何处理。这样就可以观察到整个Cloud Foundry的工作流程。本专栏第2篇文章将专门介绍如何以NATS为主线理解Cloud Foundry原理，这里就不做过多叙述了。
+>> 理解Cloud Foundry的最好方法其实是选定某一操作，如部署一个App、创建服务等，以消息为线索，跟踪到各模块，看其如何处理。这样就可以观察到整个Cloud Foundry的工作流程。
