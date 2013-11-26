@@ -158,6 +158,11 @@ HLogFile
 
 HLog Sequece File的Value是HBase的KeyValue对象，即对应HFile中的KeyValue，可参见上文描述。
 
+结束
+
+本文对HBase技术在功能和设计上进行了大致的介绍，由于篇幅有限，本文没有过多深入地描述HBase的一些细节技术。目前一淘的存储系统就是基于HBase技术搭建的，后续将介绍“一淘分布式存储系统”，通过实际案例来更多的介绍HBase应用。
+
+
 ## 其他比较 ##
 
 ## 结合自身需要评估后的结论 ##
