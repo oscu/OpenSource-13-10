@@ -293,6 +293,9 @@ OpenStack用于部署云的一个开源软件平台.
 	</tr>
 </table>
 ## 结合自身需要评估后的结论 ##
+如果采用Python语言进行开发时，优先考虑OpenStack。如果采用Java语言进行开发时，则采用CloudStack。个人更倾
+向于CloudStack，主要原因为拥有强大的社区支持以及ASF的支持与维护，除此之外由于拥有强大的维护团队，CloudStack
+版本更加稳定以及兼容性更好，为此首选CloudStack。
 
 ## 组员贡献 ##
 
