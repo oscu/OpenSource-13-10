@@ -49,6 +49,30 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 - ÏîÄ¿ÓëÅä¶î
 
 - Í¨¹ýÍøÂçä¯ÀÀÆ÷µÄVNC£¨ÐéÄâÍøÂç¼ÆËã»ú£©´úÀí
+
+¸÷¹¦ÄÜ½Úµã±È½Ï
+
+<table>
+<tr>
+<td>&nbsp;</td>
+<td>Ç°¶Ë</td>
+<td>¼ÆËã½Úµã</td>
+<td>±¸×¢</td>
+</tr>
+<tr>
+<td>Eucalyptus</td>
+<td>Ê¹ÓÃubuntu10.04»òÕßCentos5.5²Ù×÷ÏµÍ³,Í¨¹ýapt-get install»òÕßyum installµÄ·½Ê½Ö±½Ó°²×°¶þ½øÖÆ°ü,¹¹½¨Ò»¸ö°üº¬CLC,Walrus,SC,CCµÄÇ°¶Ë.¸ù¾Ý¹Ù·½ÍøÕ¾Ìá¹©µÄÎÄµµ½øÐÐ²Ù×÷,ÊÇ±È½ÏÈÝÒ×ÊµÏÖµÄ¡£</td>
+<td>Ê¹ÓÃubuntu10.04»òÕßCentos5.5²Ù×÷ÏµÍ³£¬Í¨¹ýapt-get install»òÕßyum install µÄ·½Ê½Ö±½Ó°²×°¶þ½øÖÆ°ü£¬¹¹½¨Ò»¸öÌá¹©NC·þÎñµÄ¼ÆËã½Úµã¡£¸ù¾Ý¹Ù·½ÍøÕ¾Ìá¹©µÄÎÄµµ½øÐÐ²Ù×÷£¬ÊÇ±È½ÏÈÝÒ×ÊµÏÖµÄ¡£</td>
+<td>Eucalyptus°üº¬ÁËÒ»¸ödhcpd£¬Èç¹ûÅäÖÃ²»ºÃµÄ»°£¬»áÔì³ÉÒ»¶¨µÄÂé·³¡£ÁíÍâ£¬¼ÆËã½Úµã£¨NC£©Óë¼¯Èº¿ØÖÆÆ÷£¨CC£©±ØÐëÔÚÒ»¸öCÀàÖ®ÍøÀï¡£Èç¹ûNCºÍCCÔÚÒ»¸ö³¬ÍøÀï£¬ÔÚ×¢²á·þÎñµÄÊ±ºò»á³öÏÖÒ»Ð©ÎÊÌâ¡£</td>
+</tr>
+<tr>
+<td>OpenStack</td>
+<td>ÔÚubuntu10.04ÉÏÀûÓÃ¹Ù·½ÍøÕ¾Ìá¹©µÄnova-install½Å±¾½øÐÐ°²×°£¬»ù±¾ÉÏÃ»ÓÐÓöµ½ÎÊÌâ</td>
+<td>ÔÚubuntu10.04ÉÏÀûÓÃ¹Ù·½ÍøÕ¾Ìá¹©µÄnova-install½Å±¾½øÐÐ°²×°£¬»ù±¾ÉÏÃ»ÓÐÓöµ½ÎÊÌâ</td>
+<td>¶ÔÓÚÒ»¸ö¼òµ¥µÄÏµÍ³£¬°²×°ÅäÖÃ±È½Ï¼òµ¥¡£</td>
+</tr>
+</table>
+¼¸ÖÖÐéÄâ»¯¼¼ÊõÖ§³Ö
 <table>
 <tr>
 <td>&nbsp;</td>
