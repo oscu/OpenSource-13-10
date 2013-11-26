@@ -126,6 +126,9 @@ HMaster没有单点问题，HBase中可以启动多个HMaster，通过Zookeeper�
 4、 在HRegionServer停机后，负责失效HRegionServer 上的Regions迁移
 
 
+###HBase存储格式
+
+
 
 ## 其他比较 ##
 
