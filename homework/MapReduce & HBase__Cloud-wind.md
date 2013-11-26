@@ -134,7 +134,7 @@ HBase中的所有数据文件都存储在Hadoop HDFS文件系统上，主要包�
 
 2. HLog File，HBase中WAL（Write Ahead Log） 的存储格式，物理上是Hadoop的Sequence File
 
-HFile
+#####HFile
 
 下图是HFile的存储格式：
 
@@ -150,7 +150,7 @@ HFile里面的每个KeyValue对就是一个简单的byte数组。但是这个byt
 
 开始是两个固定长度的数值，分别表示Key的长度和Value的长度。紧接着是Key，开始是固定长度的数值，表示RowKey的长度，紧接着是RowKey，然后是固定长度的数值，表示Family的长度，然后是Family，接着是Qualifier，然后是两个固定长度的数值，表示Time Stamp和Key Type（Put/Delete）。Value部分没有这么复杂的结构，就是纯粹的二进制数据了。
 
-HLogFile
+##### HLogFile
 
 ![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0100.jpg)
 
@@ -158,7 +158,7 @@ HLogFile
 
 HLog Sequece File的Value是HBase的KeyValue对象，即对应HFile中的KeyValue，可参见上文描述。
 
-结束
+### 结束
 
 本文对HBase技术在功能和设计上进行了大致的介绍，由于篇幅有限，本文没有过多深入地描述HBase的一些细节技术。目前一淘的存储系统就是基于HBase技术搭建的，后续将介绍“一淘分布式存储系统”，通过实际案例来更多的介绍HBase应用。
 
