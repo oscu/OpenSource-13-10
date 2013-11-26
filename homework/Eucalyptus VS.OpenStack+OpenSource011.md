@@ -32,9 +32,7 @@ OpenStack ÊÇÓÉ Rackspace ºÍ NASA ¹²Í¬¿ª·¢µÄÔÆ¼ÆËãÆ½Ì¨£¬°ïÖú·þÎñÉÌºÍÆóÒµÄÚ²¿ÊµÏÖÀ
 
 - Áé»îµÄÍøÂç¹ÜÀí¡¢°²È«×éºÍÁ÷Á¿¸ôÀë¡£
 
-OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©ºÍGlance£¨Ò»ÖÖÎªÐéÄâÓ²ÅÌ¾µÏñÌá¹©·¢ÏÖ¡¢×¢²áºÍ½»¸¶·þÎñµÄAPI·þÎñÆ÷£©¡£SwiftÎª¿É·ÃÎÊµÄÐí¶àPB£¨1PB = 100ÍòGB£©Êý¾ÝÌá¹©¿ÉÀ©Õ¹µÄ¶ÔÏó´æ´¢¡£°üÀ¨CloudStack 3ÔÚÄÚµÄÐí¶à³§ÉÌ¶¼Ö§³ÖOpenStack 2011.3¡£
-
-Ä¿Ç°£¬NovaÈ«ÃæÖ§³ÖÁ½¸ö¹ÜÀí³ÌÐò£ºKVMºÍXEN¡£Õâ¸öÆ½Ì¨ÕýÔÚÑ¸ËÙµØ¿ª·¢²¢ÇÒºÜ¿ì½«Ìá¹©¸ü¹ã·ºµÄ¹¦ÄÜ¡£Õâ¸ö¼¼ÊõÔÚ×¨ÒµÈËÔ±µÄ´óÐÍÉçÇøÊÇ·Ç³£Á÷ÐÐµÄ²¢ÇÒµÃµ½ÁËË¼¿Æ¡¢´÷¶û¡¢ÃÀ¹úº½Ìì¾Ö¡¢Ó¢ÌØ¶û¡¢AMD¡¢Ë¼½Ü¡¢RackspaceºÍRightScaleµÈ¹«Ë¾µÄÖ§³Ö¡£Õâ¸ö²úÆ·µÄºËÐÄÊÇÃÀ¹úº½Ìì¾Ö¿ª·¢µÄ¡£
+OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©ºÍGlance£¨Ò»ÖÖÎªÐéÄâÓ²ÅÌ¾µÏñÌá¹©·¢ÏÖ¡¢×¢²áºÍ½»¸¶·þÎñµÄAPI·þÎñÆ÷£©¡£SwiftÎª¿É·ÃÎÊµÄÐí¶àPB£¨1PB = 100ÍòGB£©Êý¾ÝÌá¹©¿ÉÀ©Õ¹µÄ¶ÔÏó´æ´¢¡£Ä¿Ç°£¬NovaÈ«ÃæÖ§³ÖÁ½¸ö¹ÜÀí³ÌÐò£ºKVMºÍXEN¡£Õâ¸öÆ½Ì¨ÕýÔÚÑ¸ËÙµØ¿ª·¢²¢ÇÒºÜ¿ì½«Ìá¹©¸ü¹ã·ºµÄ¹¦ÄÜ¡£
 
 Ö÷ÒªÌØµã£º
 
@@ -51,7 +49,35 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 - ÏîÄ¿ÓëÅä¶î
 
 - Í¨¹ýÍøÂçä¯ÀÀÆ÷µÄVNC£¨ÐéÄâÍøÂç¼ÆËã»ú£©´úÀí
-
+<table>
+<tr>
+<td>&nbsp;</td>
+<td>Xen</td>
+<td>KVM</td>
+<td>XenServer/XCP</td>
+<td>VMWare</td>
+<td>LXC</td>
+<td>openVZ</td>
+</tr>
+<tr>
+<td>Eucalyptus</td>
+<td>Y</td>
+<td>Y</td>
+<td>&nbsp;</td>
+<td>Y</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>OpenStack</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>&nbsp;</td>
+</tr>
+</table>
 ## ÆäËû±È½Ï ##
 
 ÉçÇø°æ²ÉÓÃGPLv3ÊÚÈ¨Ð­Òé ÉçÇø°æ²»ÐèÒª°²×°Ðí¿É
