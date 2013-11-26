@@ -2,7 +2,7 @@
 
   **组名：**OpenSource007 
   
-  **成员：**季万强(jiwanqiang)、赵勇(zhaoyong111)、徐伟(xuwei888)、冯一帆()
+  **成员：**季万强(jiwanqiang)、赵勇(zhaoyong111)、徐伟(xuwei888)、冯一帆(evanf)
 
 ## 项目介绍 ##
 ###1. OpenStack###
