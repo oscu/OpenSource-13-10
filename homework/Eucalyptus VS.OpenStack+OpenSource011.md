@@ -10,7 +10,7 @@
 
 ## ÏîÄ¿½éÉÜ ##
 
-Elastic Utility Computing Architecture for Linking Your Programs To Useful Systems £¨Eucalyptus£© ÊÇÒ»ÖÖ¿ªÔ´µÄÈí¼þ»ù´¡½á¹¹£¬ÓÃÀ´Í¨¹ý¼ÆËã¼¯Èº»ò¹¤×÷Õ¾ÈºÊµÏÖµ¯ÐÔµÄ¡¢ÊµÓÃµÄÔÆ¼ÆËã¡£Ëü×î³õÊÇÃÀ¹ú¼ÓÀû¸£ÄáÑÇ´óÑ§ Santa Barbara ¼ÆËã»ú¿ÆÑ§Ñ§ÔºµÄÒ»¸öÑÐ¾¿ÏîÄ¿£¬ÏÖÔÚÒÑ¾­ÉÌÒµ»¯£¬·¢Õ¹³ÉÎªÁË Eucalyptus Systems Inc¡£²»¹ý£¬Eucalyptus ÈÔÈ»°´¿ªÔ´ÏîÄ¿ÄÇÑùÎ¬»¤ºÍ¿ª·¢¡£Eucalyptus Systems »¹ÔÚ»ùÓÚ¿ªÔ´µÄ Eucalyptus ¹¹½¨¶îÍâµÄ²úÆ·£»Ëü»¹Ìá¹©Ö§³Ö·þÎñ¡£
+Eucalyptus Ó¢ÎÄÈ«³ÆElastic Utility Computing Architecture for Linking Your Programs To Useful Systems,ÊÇÒ»ÖÖ¿ªÔ´µÄÈí¼þ»ù´¡½á¹¹£¬ÓÃÀ´Í¨¹ý¼ÆËã¼¯Èº»ò¹¤×÷Õ¾ÈºÊµÏÖµ¯ÐÔµÄ¡¢ÊµÓÃµÄÔÆ¼ÆËã¡£Ëü×î³õÊÇÃÀ¹ú¼ÓÀû¸£ÄáÑÇ´óÑ§ Santa Barbara ¼ÆËã»ú¿ÆÑ§Ñ§ÔºµÄÒ»¸öÑÐ¾¿ÏîÄ¿£¬ÏÖÔÚÒÑ¾­ÉÌÒµ»¯£¬·¢Õ¹³ÉÎªÁË Eucalyptus Systems Inc¡£²»¹ý£¬Eucalyptus ÈÔÈ»°´¿ªÔ´ÏîÄ¿ÄÇÑùÎ¬»¤ºÍ¿ª·¢¡£Eucalyptus Systems »¹ÔÚ»ùÓÚ¿ªÔ´µÄ Eucalyptus ¹¹½¨¶îÍâµÄ²úÆ·£»Ëü»¹Ìá¹©Ö§³Ö·þÎñ¡£
 EucalyptusÔÆ¼ÆËãÈí¼þ£¬ÔÚÒ»¸öÆ½Ì¨ÉÏ£¨·ÖÎªopen source°æºÍenterprise°æ£©£¬Ìá¹©ÁË¶ÔÕâÐ©×ÊÔ´µÄ³éÏó¡£EucalyptusµÄÔ´ÂëÊÇ¹«¿ªµÄ¡£²¢ÇÒÓÐÌá¹©¸øCentOS 5£¬Debian squeeze£¬OpenSUSE 11£¬Fedora 12µÄÈí¼þ°ü¡£
 EucalyptusÑ¡ÔñXenºÍKVM×÷ÎªÐéÄâ»¯µÄ¹ÜÀí³ÌÐò¡£Ä¿Ç°°æ±¾ÊÇ3.2¡£EucalyptusµÄenterprise°æÒÑ¾­¶ÔvSphere ESX/ESXiÌá¹©ÁËÖ§³Ö¡£
 
@@ -20,6 +20,37 @@ OpenStackÊÇÒ»¸öÖ¼ÔÚÎª¹«¹²¼°Ë½ÓÐÔÆµÄ½¨ÉèÓë¹ÜÀíÌá¹©Èí¼þµÄ¿ªÔ´ÏîÄ¿¡£ËüµÄÉçÇøÓµÓÐ³¬¹
 OpenStack ÊÇÓÉ Rackspace ºÍ NASA ¹²Í¬¿ª·¢µÄÔÆ¼ÆËãÆ½Ì¨£¬°ïÖú·þÎñÉÌºÍÆóÒµÄÚ²¿ÊµÏÖÀàËÆÓÚ Amazon EC2 ºÍ S3 µÄÔÆ»ù´¡¼Ü¹¹·þÎñ(Infrastructure as a Service, IaaS)¡£OpenStack °üº¬Á½¸öÖ÷ÒªÄ£¿é£ºNova ºÍ Swift£¬Ç°ÕßÊÇ NASA ¿ª·¢µÄÐéÄâ·þÎñÆ÷²¿ÊðºÍÒµÎñ¼ÆËãÄ£¿é£»ºóÕßÊÇ Rackspace¿ª·¢µÄ·Ö²¼Ê½ÔÆ´æ´¢Ä£¿é£¬Á½Õß¿ÉÒÔÒ»ÆðÓÃ£¬Ò²¿ÉÒÔ·Ö¿ªµ¥¶ÀÓÃ¡£OpenStack ÊÇ¿ªÔ´ÏîÄ¿£¬³ýÁËÓÐ Rackspace ºÍ NASA µÄ´óÁ¦Ö§³ÖÍâ£¬ºóÃæ»¹ÓÐ°üÀ¨ Dell¡¢Citrix¡¢ Cisco¡¢ Canonical ÕâÐ©ÖØÁ¿¼¶¹«Ë¾µÄ¹±Ï×ºÍÖ§³Ö£¬·¢Õ¹ËÙ¶È·Ç³£¿ì¡£
 
 ## ¹¦ÄÜ±È½Ï ##
+Ê¹Õâ¸öÆ½Ì¨Ê¹ÓÃ¸ü·½±ãµÄ×î´óµÄÓÅÊÆÖ®Ò»ÊÇEucalyptus APIÈ«Ãæ¼æÈÝÑÇÂíÑ·API¡£Òò´Ë£¬»ùÓÚÑÇÂíÑ·APIµÄËùÓÐµÄ½Å±¾ºÍÈí¼þ²úÆ·¶¼¿ÉÒÔÇáËÉµØÎªÄãµÄË½ÓÐÔÆ²¿Êð¡£EucalyptusÖ§³ÖÈý¸ö¹ÜÀí³ÌÐò£ºXEN¡¢KVMºÍESXi¡£×îºóÒ»¸ö¹ÜÀí³ÌÐò½öÏòÆóÒµÔÆ°æÓÃ»§Ìá¹©¡£
+
+Ö÷ÒªÌØµã£º
+
+- ÈÎÎñ£¨·ÖÅäºÍ¹ÜÀíÈ¨ÏÞ£©
+
+- ²»ÒÀÀµÓÚÈÎºÎ¹ÜÀí³ÌÐò¡£
+
+- ¼¯ÈºÓë·ÖÇø¡£
+
+- Áé»îµÄÍøÂç¹ÜÀí¡¢°²È«×éºÍÁ÷Á¿¸ôÀë¡£
+
+OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©ºÍGlance£¨Ò»ÖÖÎªÐéÄâÓ²ÅÌ¾µÏñÌá¹©·¢ÏÖ¡¢×¢²áºÍ½»¸¶·þÎñµÄAPI·þÎñÆ÷£©¡£SwiftÎª¿É·ÃÎÊµÄÐí¶àPB£¨1PB = 100ÍòGB£©Êý¾ÝÌá¹©¿ÉÀ©Õ¹µÄ¶ÔÏó´æ´¢¡£°üÀ¨CloudStack 3ÔÚÄÚµÄÐí¶à³§ÉÌ¶¼Ö§³ÖOpenStack 2011.3¡£
+
+Ä¿Ç°£¬NovaÈ«ÃæÖ§³ÖÁ½¸ö¹ÜÀí³ÌÐò£ºKVMºÍXEN¡£Õâ¸öÆ½Ì¨ÕýÔÚÑ¸ËÙµØ¿ª·¢²¢ÇÒºÜ¿ì½«Ìá¹©¸ü¹ã·ºµÄ¹¦ÄÜ¡£Õâ¸ö¼¼ÊõÔÚ×¨ÒµÈËÔ±µÄ´óÐÍÉçÇøÊÇ·Ç³£Á÷ÐÐµÄ²¢ÇÒµÃµ½ÁËË¼¿Æ¡¢´÷¶û¡¢ÃÀ¹úº½Ìì¾Ö¡¢Ó¢ÌØ¶û¡¢AMD¡¢Ë¼½Ü¡¢RackspaceºÍRightScaleµÈ¹«Ë¾µÄÖ§³Ö¡£Õâ¸ö²úÆ·µÄºËÐÄÊÇÃÀ¹úº½Ìì¾Ö¿ª·¢µÄ¡£
+
+Ö÷ÒªÌØµã£º
+
+- ÄÜ¹»¹ÜÀíÐéÄâ»¯µÄÉÌÆ··þÎñÆ÷×ÊÔ´
+
+- ÄÜ¹»¹ÜÀí¾ÖÓòÍø
+
+- ÐéÄâ»ú¾µÏñ¹ÜÀí
+
+- °²È«×é
+
+- »ùÓÚÈÎÎñµÄ·ÃÎÊ¿ØÖÆ
+
+- ÏîÄ¿ÓëÅä¶î
+
+- Í¨¹ýÍøÂçä¯ÀÀÆ÷µÄVNC£¨ÐéÄâÍøÂç¼ÆËã»ú£©´úÀí
 
 ## ÆäËû±È½Ï ##
 
