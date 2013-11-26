@@ -333,7 +333,7 @@ NoSQL 是非关系型数据存储的广义定义。它打破了长久以来关�
 ## 结合自身需要评估后的结论 ##
 
 ## 组员贡献 ##
-赵风光 SceneZhao
+赵风光 SceneZhao 参与章节 ：项目介绍， 8种Nosql数据库系统对比
 许世恒  xshwlx 参与章节 ： Nosql 典型应用 HBase,nosql和关系型数据库比较,hadoop主要组成部件介绍
 景泽翔 jingzexiang76 参与章节：Hadoop优缺点, Nosql优缺点, 功能比较 
 白立江 bailijiang 参与章节：NoSQL典型应用 Redis
