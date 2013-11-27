@@ -4,7 +4,7 @@
 组内成员： 王兴朝 王彬 邱丹  盛敏智
 
 ## 项目介绍 ##
-我们知道Hadoop是一个能够对大亮数据进行分布式处理的软件框架，实现Google了的MapReduce编程模型和框架，能够把应用程序分割成许多小的工作单元，并把这些单元放到任何集群节点上执行。 
+我们知道Hadoop是一个能够对大亮数据进行分布式处理的软件框架，实现Google了的MapReduce编程模型和框架，能够把应用程序分割成许多小的工作单元，并把这些单元放到任何集群节点上执行。
 
 在MapReduce中，一个准备提交执行的应用程序称为“作业（job）”， 而从一个作业划分出的、运行于各个计算节点的工作单元称为“任务task”。此外，Hadoop提供的分布式各个系统（HEFS）主要负责各个节点上的数据存储，并实现了高吞吐率的数据读写， 我们小组主要介绍的是Hadoop中两个重要的技术，一个是MapReduce;另一个是HBase；
 
@@ -96,11 +96,11 @@ HBase是按照存储的稀疏行/列矩阵，物理模型实际上就是把概�
 ![Smaller icon](http://ww1.sinaimg.cn/large/62ca154djw1eay93vz8szj20ho06tt96.jpg)
 
  Row Key: 行键，Table的主键，Table中的记录按照Row Key排序
- 
+
  Timestamp: 时间戳，每次数据操作对应的时间戳，可以看作是数据的version number
- 
+
  Column Family：列簇，Table在水平方向有一个或者多个Column Family组成。  一个Column Family中可以由任意多个Column组成，即Column Family支持动态扩展，无需预先定义Column的数量以及类型，所有Column均以二进制格式存储，用户需要自行进行类型转换。
- 
+
 ###HBase系统架构
 
 ![Smaller icon](http://www.searchtb.com/wp-content/uploads/2011/01/image0050.jpg)
@@ -128,6 +128,39 @@ HMaster没有单点问题，HBase中可以启动多个HMaster，通过Zookeeper�
 
 ###HBase存储格式
 
+HBase中的所有数据文件都存储在Hadoop HDFS文件系统上，主要包括上述提出的两种文件类型：
+
+1. HFile， HBase中KeyValue数据的存储格式，HFile是Hadoop的二进制格式文件，实际上StoreFile就是对HFile做了轻量级包装，即StoreFile底层就是HFile
+
+2. HLog File，HBase中WAL（Write Ahead Log） 的存储格式，物理上是Hadoop的Sequence File
+
+#####HFile
+
+下图是HFile的存储格式：
+
+![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0080.jpg)
+
+首先HFile文件是不定长的，长度固定的只有其中的两块：Trailer和FileInfo。正如图中所示的，Trailer中有指针指向其他数据块的起始点。File Info中记录了文件的一些Meta信息，例如：AVG_KEY_LEN, AVG_VALUE_LEN, LAST_KEY, COMPARATOR, MAX_SEQ_ID_KEY等。Data Index和Meta Index块记录了每个Data块和Meta块的起始点。
+
+Data Block是HBase I/O的基本单元，为了提高效率，HRegionServer中有基于LRU的Block Cache机制。每个Data块的大小可以在创建一个Table的时候通过参数指定，大号的Block有利于顺序Scan，小号Block利于随机查询。每个Data块除了开头的Magic以外就是一个个KeyValue对拼接而成, Magic内容就是一些随机数字，目的是防止数据损坏。后面会详细介绍每个KeyValue对的内部构造。
+
+HFile里面的每个KeyValue对就是一个简单的byte数组。但是这个byte数组里面包含了很多项，并且有固定的结构。我们来看看里面的具体结构：
+
+![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0090.jpg)
+
+开始是两个固定长度的数值，分别表示Key的长度和Value的长度。紧接着是Key，开始是固定长度的数值，表示RowKey的长度，紧接着是RowKey，然后是固定长度的数值，表示Family的长度，然后是Family，接着是Qualifier，然后是两个固定长度的数值，表示Time Stamp和Key Type（Put/Delete）。Value部分没有这么复杂的结构，就是纯粹的二进制数据了。
+
+##### HLogFile
+
+![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0100.jpg)
+
+上图中示意了HLog文件的结构，其实HLog文件就是一个普通的Hadoop Sequence File，Sequence File 的Key是HLogKey对象，HLogKey中记录了写入数据的归属信息，除了table和region名字外，同时还包括 sequence number和timestamp，timestamp是“写入时间”，sequence number的起始值为0，或者是最近一次存入文件系统中sequence number。
+
+HLog Sequece File的Value是HBase的KeyValue对象，即对应HFile中的KeyValue，可参见上文描述。
+
+### 结束
+
+本文对HBase技术在功能和设计上进行了大致的介绍，由于篇幅有限，本文没有过多深入地描述HBase的一些细节技术。目前一淘的存储系统就是基于HBase技术搭建的，后续将介绍“一淘分布式存储系统”，通过实际案例来更多的介绍HBase应用。
 
 
 ## 其他比较 ##
@@ -145,4 +178,4 @@ HMaster没有单点问题，HBase中可以启动多个HMaster，通过Zookeeper�
 
 
 
-      
+
