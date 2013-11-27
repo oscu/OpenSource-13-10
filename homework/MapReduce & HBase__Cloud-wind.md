@@ -180,11 +180,20 @@ HBase一个最重要的特性在于，其在满足海量存储规模的前提下
 
 ## 结合自身需要评估后的结论 ##
 
-
+最早我个人使用的都是关系型的数据库， 像Mysql， DB2， 轻量级的Sqlite等数据库， 后来听说Nosql数据库中的Mongodb是一种介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的，后来就接触了一下， 对我来说感觉还是挺实用， 想它的数据结构非常松散，保存的数据类似于我们常用JSON格式。
+另外就是他的查询语言也类似于面向对象的查询语言，上手很是挺快的， 而HBase我也是刚刚接触，觉得它在配置上就相比MongoDB复杂多了，不过它也有它自身的很多优势，比方像存储海量数据，那么估计它要比MongoDB强很多。
+还有特别重要的一点就是HBase与MapReduce的集成比较容易。
 
 
 
 ## 组员贡献 ##
+
+王兴朝主要编写了MapReduce所有部分和HBase的简介
+邱丹主要编写了HBase中的HBase存储格式
+王彬主要编写了HBase系统架构
+盛敏智主要编写了HBase访问接口和HBase数据模型
+
+
 
 ## 参考资料 ##
 【1】 刘鹏云计算（第二版）[M]. 北京： 电子工业出版社，2011
@@ -193,6 +202,10 @@ HBase一个最重要的特性在于，其在满足海量存储规模的前提下
 
 【3】 曹羽中。 用Hadoop 进行分布式并行编程[OL].  [链接地址](https://www.ibm.com/developerworks/cn/opensource/os-cn-hadoop1/)
 
+【4】 HBase的官网 [链接地址](http://hbase.apache.org)
 
+【5】 Lars George. HBase The Definitive Guide[M]. O'Reilly Media, 2011
 
+【6】 ZeYuan. HBase介绍 [OL]. 
+ 
 
