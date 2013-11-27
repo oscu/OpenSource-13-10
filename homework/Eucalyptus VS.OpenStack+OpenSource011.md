@@ -190,6 +190,8 @@ Openstack项目发展较快，也得到了较多大的厂商支持。但openstack的模块结构相对碎片化
 
 陈琼 贡献”项目介绍，功能比较，结论“部分
 
+夏小刚 贡献"架构比较" 部分
+
 ## 参考资料 ##
 CloudStack、OpenStack等四大云平台评测 http://www.chinacloud.cn/show.aspx?id=12339&cid=16 
 
