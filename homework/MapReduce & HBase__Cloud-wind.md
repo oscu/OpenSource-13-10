@@ -172,9 +172,17 @@ HBase一个最重要的特性在于，其在满足海量存储规模的前提下
 与Cassandra不同的是，Cassandra满足CAP原则的高可用性，分区可容忍性原则，而HBase则满足了分区可容忍性，高一致性原则，对于高可用性，HBase由于HMaster单点失败问题而无法满足。
 
 
+另外一个重要特性在于，HBase与Hadoop HDFS，Map/Reduce的天然结合，这是其他NOSQL存储无法比拟的优势。
+       
+例如在Hadoop0.20.2 map/reduce new API中，对于海量数据全局排序，由于缺乏TotalOrderPartitioner对new API支持，甚至直接都可以使用HBase库中的TotalOrderPartitioner包进行处理。HBase与Hadoop平台能够结合的一个最大优势在于，HBase分布式存储后数据分块的replication由Hadoop HDFS自动分发完成。HBase是一个读写延迟性相对较低的nosql存储，与hadoop HDFS存储相比，HBASE更专注于单条数据交互读写，低延迟性；而HADOOP HDFS则更专注于批量数据的读写，更专注于高吞吐量，导致其延迟性较高。
+
 
 
 ## 结合自身需要评估后的结论 ##
+
+
+
+
 
 ## 组员贡献 ##
 
