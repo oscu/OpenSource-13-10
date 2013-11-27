@@ -138,7 +138,7 @@ HBase中的所有数据文件都存储在Hadoop HDFS文件系统上，主要包�
 
 下图是HFile的存储格式：
 
-![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0080.jpg)
+![Smaller icon](http://www.searchtb.com/wp-content/uploads/2011/01/image0080.jpg)
 
 首先HFile文件是不定长的，长度固定的只有其中的两块：Trailer和FileInfo。正如图中所示的，Trailer中有指针指向其他数据块的起始点。File Info中记录了文件的一些Meta信息，例如：AVG_KEY_LEN, AVG_VALUE_LEN, LAST_KEY, COMPARATOR, MAX_SEQ_ID_KEY等。Data Index和Meta Index块记录了每个Data块和Meta块的起始点。
 
@@ -146,13 +146,13 @@ Data Block是HBase I/O的基本单元，为了提高效率，HRegionServer中有
 
 HFile里面的每个KeyValue对就是一个简单的byte数组。但是这个byte数组里面包含了很多项，并且有固定的结构。我们来看看里面的具体结构：
 
-![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0090.jpg)
+![Smaller icon](http://www.searchtb.com/wp-content/uploads/2011/01/image0090.jpg)
 
 开始是两个固定长度的数值，分别表示Key的长度和Value的长度。紧接着是Key，开始是固定长度的数值，表示RowKey的长度，紧接着是RowKey，然后是固定长度的数值，表示Family的长度，然后是Family，接着是Qualifier，然后是两个固定长度的数值，表示Time Stamp和Key Type（Put/Delete）。Value部分没有这么复杂的结构，就是纯粹的二进制数据了。
 
 ##### HLogFile
 
-![Smaller icon](http://http://www.searchtb.com/wp-content/uploads/2011/01/image0100.jpg)
+![Smaller icon](http://www.searchtb.com/wp-content/uploads/2011/01/image0100.jpg)
 
 上图中示意了HLog文件的结构，其实HLog文件就是一个普通的Hadoop Sequence File，Sequence File 的Key是HLogKey对象，HLogKey中记录了写入数据的归属信息，除了table和region名字外，同时还包括 sequence number和timestamp，timestamp是“写入时间”，sequence number的起始值为0，或者是最近一次存入文件系统中sequence number。
 
