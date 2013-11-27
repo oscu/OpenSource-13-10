@@ -163,8 +163,15 @@ HFile里面的每个KeyValue对就是一个简单的byte数组。但是这个byt
 ###HBase与Cassandra、MongoDB的对比
 HBase与Cassandra，MongoDB相比，其是一个重量级的NoSql存储系统。根据一些信息来源，目前实际产线中Cassandra最大部署规模在400台左右，Mongodb则实际应用少见。其它例如memcache,redis，实际上很难说它是个nosql存储，只能说是缓存存储，存储数据量有限。
 
+Cassandra出现这样的一个重要问题在于随着集群规模越来越大，由于缺乏Master节点导致缓存命中率可能非常差。
 
- 
+而HBase在Facebook部署有上千台规模。
+        
+HBase一个最重要的特性在于，其在满足海量存储规模的前提下，数据读写IO变化幅度并不是特别明显，延迟性变化幅度相对较小。
+
+与Cassandra不同的是，Cassandra满足CAP原则的高可用性，分区可容忍性原则，而HBase则满足了分区可容忍性，高一致性原则，对于高可用性，HBase由于HMaster单点失败问题而无法满足。
+
+
 
 
 ## 结合自身需要评估后的结论 ##
