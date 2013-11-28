@@ -178,6 +178,18 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 
 > OpenStackÍ¨¹ýAgentµÄ·½Ê½À´¹ÜÀí¼ÆËã×ÊÔ´¡£ÔÚÃ¿Ò»¸ö¼ÆËã½ÚµãÉÏ£¬¶¼ÐèÒªÔËÐÐnova-network·þÎñºÍnova-compute·þÎñ¡£ÕâÐ©·þÎñÆô¶¯Ö®ºó£¬¾Í¿ÉÒÔÍ¨¹ýÏûÏ¢¶ÓÁÐÀ´ÓëÔÆ¿ØÖÆÆ÷½øÐÐ½»»¥¡£
 
+
+##³É¹¦Ó¦ÓÃ¶Ô±È##
+ 
+>»ùÓÚÁ½Õß¹¦ÄÜ±È½ÏÖÐµÄ¸÷×ÔÌØÐÔ£¬Á½ÕßÔÚÐÐÒµÄÚ¶¼ÓÐ²»Í¬µÄ³É¹¦Ó¦ÓÃÆóÒµ¡£
+
+-³É¹¦Ó¦ÓÃÆóÒµ
+>Eucalyptus Ó¦ÓÃ²¿Êð·Ç³£¹ã·ºµÄË½ÓÐ»ù´¡ÉèÊ©¼´·þÎñÔÆÈí¼þÆ½Ì¨£¬¾ßÓÐ¸ß¿ÉÓÃÐÔIaas£¬Áé»îµØ¹ÜÀí¶à»úÆ÷¾µÏñ¸ñÊ½£¬Òì¹¹¶àÐéÄâ»ú¹ÜÀí£¬³ÉÊì¿É¿¿µÄSAN¼¯³É£¬Áé»îµÄÕÊÎñ¡¢Í³¼ÆºÍÅä¶î¹ÜÀíµÈÌØµã£¬ÔÚÆóÒµË½ÓÐÔÆ·½ÃæÒ²ÓÐºÜºÃµÄÓ¦ÓÃ
+> ³É¹¦Ó¦ÓÃÆóÒµ£ºÑÇÂíÑ·£¬Ë÷Äá£¬Puma£¬Ç÷ÊÆ¿Æ¼¼
+ 
+>OpenStack ÊÇÒ»¸öÔÆÆ½Ì¨¹ÜÀíÈí¼þ£¬¿ÉÒÔ¹ÜÀí¹«ÓÐÔÆ¡¢Ë½ÓÐÔÆºÍ»ìºÏÔÆ¼Ü¹¹£¬ÒòOpenStack¾ßÓÐÒÔÏÂÌØµã£º1.½Ó½üÓÃ»§£¬ÍêÈ«ÊµÏÖ¶¨ÖÆ»¯¡£ 2.±ÜÃâ³§ÉÌËø¶¨¡£ 3.Ê¹ÓÃ»ìºÏÔÆÉúÌ¬»·¾³¡£Ô½À´Ô½¶àµÄÆóÒµ¿ªÊ¼×ªÏòÊ¹ÓÃOpenStack¡£
+> ³É¹¦Ó¦ÓÃÆóÒµ£ºÃÀ¹ú¼Ò°²È«¾Ö£¬°ÙË¼Âò£¬PayPal,¿µ¿¨Ë¹ÌØ£¬ÐÂÀË£¬»ªÎª´æ´¢£¬»ªÊ¤Ìì³É£¬²©¿Æ£¬»ÝÆÕ£¬
+
 ## ½áºÏ×ÔÉíÐèÒªÆÀ¹ÀºóµÄ½áÂÛ ##
 EucalyptusµÄ¼Ü¹¹ÓÉÎå¸ö²¿·Ö×é³É£¬ÓëAWSÀàËÆ£¬°²×°ÄÑ¶ÈÎªÖÐµÈË®Æ½£¬ÆäGUI¹ÜÀí¹¦ÄÜÓÐÏÞ£¬ÐèÒª´óÁ¿À´×ÔÏàÓ¦ÃüÁîÐÐµÄ°ïÖú¡£´ËÍâ£¬Eucalyptus»¹ÓÐÒ»¸öÃÜÔ¿¹ÜÀí°²È«Ä£Ê½¡£ÔÚ¸ÃÄ£Ê½ÖÐ£¬Îå¸ö¼Ü¹¹×é¼þÐèÒª±Ë´Ë×¢²á¡£EucalyptusµÄÕûÌå¶È¸üºÃ¡£ÁíÍâ£¬Í¨¹ýCLC£¬Eucalyptus¿ÉÒÔÖ§³Ö¼¯ÈºµÄ¼¯Èº£¬ËùÒÔ£¬EucalyptusµÄÀ©Õ¹ÐÔ¸üÇ¿£¬¸üÈÝÒ×Âú×ãÒµÎñÀ©Õ¹µÄÐèÒª¡£
 
@@ -189,6 +201,7 @@ OpenstackÏîÄ¿·¢Õ¹½Ï¿ì£¬Ò²µÃµ½ÁË½Ï¶à´óµÄ³§ÉÌÖ§³Ö¡£µ«openstackµÄÄ£¿é½á¹¹Ïà¶ÔËéÆ¬»¯
 ÍõÎÄÃ÷ ¹±Ï×¡±ÆäËû±È½Ï¡°²¿·Ö
 
 ³ÂÇí ¹±Ï×¡±ÏîÄ¿½éÉÜ£¬¹¦ÄÜ±È½Ï£¬½áÂÛ¡°²¿·Ö
+¶Å»ªÇÈ ¹±Ï×¡°³É¹¦Ó¦ÓÃ±È½Ï¡±²¿·Ö
 
 ## ²Î¿¼×ÊÁÏ ##
 CloudStack¡¢OpenStackµÈËÄ´óÔÆÆ½Ì¨ÆÀ²â http://www.chinacloud.cn/show.aspx?id=12339&cid=16 
