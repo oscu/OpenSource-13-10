@@ -10,14 +10,23 @@
 
 ## 项目介绍 ##
 
-Eucalyptus 英文全称Elastic Utility Computing Architecture for Linking Your Programs To Useful Systems,是一种开源的软件基础结构，用来通过计算集群或工作站群实现弹性的、实用的云计算。它最初是美国加利福尼亚大学 Santa Barbara 计算机科学学院的一个研究项目，现在已经商业化，发展成为了 Eucalyptus Systems Inc。不过，Eucalyptus 仍然按开源项目那样维护和开发。Eucalyptus Systems 还在基于开源的 Eucalyptus 构建额外的产品；它还提供支持服务。
-Eucalyptus云计算软件，在一个平台上（分为open source版和enterprise版），提供了对这些资源的抽象。Eucalyptus的源码是公开的。并且有提供给CentOS 5，Debian squeeze，OpenSUSE 11，Fedora 12的软件包。
-Eucalyptus选择Xen和KVM作为虚拟化的管理程序。目前版本是3.2。Eucalyptus的enterprise版已经对vSphere ESX/ESXi提供了支持。
+- Eucalyptus介绍
 
-OpenStack是一个美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由软件和开放源代码项目。
-OpenStack是一个云平台管理的项目，它不是一个软件。这个项目由几个主要的组件组合起来完成一些具体的工作。
-OpenStack是一个旨在为公共及私有云的建设与管理提供软件的开源项目。它的社区拥有超过130家企业及1350位开发者，这些机构与个人都将OpenStack作为基础设施即服务（简称IaaS）资源的通用前端。OpenStack项目的首要任务是简化云的部署过程并为其带来良好的可扩展性。本文希望通过提供必要的指导信息，帮助大家利用OpenStack前端来设置及管理自己的公共云或私有云。
-OpenStack 是由 Rackspace 和 NASA 共同开发的云计算平台，帮助服务商和企业内部实现类似于 Amazon EC2 和 S3 的云基础架构服务(Infrastructure as a Service, IaaS)。OpenStack 包含两个主要模块：Nova 和 Swift，前者是 NASA 开发的虚拟服务器部署和业务计算模块；后者是 Rackspace开发的分布式云存储模块，两者可以一起用，也可以分开单独用。OpenStack 是开源项目，除了有 Rackspace 和 NASA 的大力支持外，后面还有包括 Dell、Citrix、 Cisco、 Canonical 这些重量级公司的贡献和支持，发展速度非常快。
+> Eucalyptus 英文全称Elastic Utility Computing Architecture for Linking Your Programs To Useful Systems,是一种开源的软件基础结构，用来通过计算集群或工作站群实现弹性的、实用的云计算。
+> 它最初是美国加利福尼亚大学 Santa Barbara 计算机科学学院的一个研究项目，现在已经商业化，发展成为了 Eucalyptus Systems Inc。不过，Eucalyptus 仍然按开源项目那样维护和开发。Eucalyptus Systems 还在基于开源的 Eucalyptus 构建额外的产品；它还提供支持服务。
+
+> Eucalyptus云计算软件，在一个平台上（分为open source版和enterprise版），提供了对这些资源的抽象。Eucalyptus的源码是公开的。并且有提供给CentOS 5，Debian squeeze，OpenSUSE 11，Fedora 12的软件包。
+> Eucalyptus选择Xen和KVM作为虚拟化的管理程序。目前版本是3.2。Eucalyptus的enterprise版已经对vSphere ESX/ESXi提供了支持。
+
+- OpenStack介绍
+
+> OpenStack是一个美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由软件和开放源代码项目。
+
+> OpenStack是一个云平台管理的项目，它不是一个软件。这个项目由几个主要的组件组合起来完成一些具体的工作。
+> OpenStack是一个旨在为公共及私有云的建设与管理提供软件的开源项目。它的社区拥有超过130家企业及1350位开发者，这些机构与个人都将OpenStack作为基础设施即服务（简称IaaS）资源的通用前端。OpenStack项目的首要任务是简化云的部署过程并为其带来良好的可扩展性。本文希望通过提供必要的指导信息，帮助大家利用OpenStack前端来设置及管理自己的公共云或私有云。
+
+> OpenStack 是由 Rackspace 和 NASA 共同开发的云计算平台，帮助服务商和企业内部实现类似于 Amazon EC2 和 S3 的云基础架构服务(Infrastructure as a Service, IaaS)。OpenStack 包含两个主要模块：Nova 和 Swift，前者是 NASA 开发的虚拟服务器部署和业务计算模块；后者是 Rackspace开发的分布式云存储模块，两者可以一起用，也可以分开单独用。OpenStack 是开源项目，除了有 Rackspace 和 NASA 的大力支持外，后面还有包括 Dell、Citrix、 Cisco、 Canonical 这些重量级公司的贡献和支持，发展速度非常快。
+
 
 ## 功能比较 ##
 使这个平台使用更方便的最大的优势之一是Eucalyptus API全面兼容亚马逊API。因此，基于亚马逊API的所有的脚本和软件产品都可以轻松地为你的私有云部署。Eucalyptus支持三个管理程序：XEN、KVM和ESXi。最后一个管理程序仅向企业云版用户提供。
