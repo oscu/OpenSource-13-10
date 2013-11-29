@@ -160,16 +160,18 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 </tr>
 </table>
 
-Èý¡¢¼Ü¹¹·½ÃæµÄ±È½Ï
+###¼Ü¹¹·½ÃæµÄ±È½Ï###
 - 
-- Eucalyptus¼Ü¹¹ 
+####Eucalyptus¼Ü¹¹#### 
+
 > EucalyptusÊÇÒ»¸öÓëAmazon EC2¼æÈÝµÄIaaSÏµÍ³¡£Eucalyptus°üÀ¨ÔÆ¿ØÖÆÆ÷(CLC)¡¢Walrus¡¢¼¯Èº¿ØÖÆÆ÷(CC)¡¢´æ´¢¿ØÖÆÆ÷(SC)ºÍ½Úµã¿ØÖÆÆ÷(NC)¡£CLCÊÇÕû¸öEucalyptuÏµÍ³µÄºËÐÄ£¬¸ºÔð¸ß²ã´ÎµÄ×ÊÔ´µ÷¶È£¬ÀýÈçÏòCCÇëÇó¼ÆËã×ÊÔ´¡£WalrusÊÇ Ò»¸öÓëAmazon S3ÀàËÆµÄ´æ´¢·þÎñ£¬Ö÷ÒªÓÃÓÚ´æ´¢ÐéÄâ»úÓ³ÏñºÍÓÃ»§Êý¾Ý¡£CCÊÇÒ»¸ö¼¯ÈºµÄÇ°¶Ë£¬¸ºÔðÐ­µ÷Ò»¸ö¼¯ÈºÄÚµÄ¼ÆËã×ÊÔ´£¬²¢ÇÒ¹ÜÀí¼¯ÈºÄÚµÄÍøÂçÁ÷Á¿¡£SCÊÇÒ»¸öÓëAmazon EBSÀàËÆµÄ´æ´¢¿éÉè±¸·þÎñ£¬¿ÉÒÔÓÃÀ´´æ´¢ÒµÎñÊý¾Ý¡£NCÊÇ×îÖÕµÄ¼ÆËã½Úµã£¬Í¨¹ýµ÷ÓÃ²Ù×÷ÏµÍ³²ãµÄÐéÄâ»¯¼¼ÊõÀ´Æô¶¯ºÍ¹Ø±ÕÐéÄâ»ú¡£ÔÚÍ¬Ò»¸ö¼¯Èº(CC)ÄÚµÄËùÓÐ¼ÆËã½Úµã(NC)±ØÐëÔÚÍ¬Ò»¸ö×ÓÍøÄÚ¡£ ÔÚÒ»¸ö¼¯Èº(CC)ÄÚÍ¨³£ÐèÒª²¿ÊðÒ»Ì¨´æ´¢·þÎñÆ÷(SC)£¬Îª¸Ã¼¯ÈºÄÚµÄ¼ÆËã½ÚµãÌá¹©Êý¾Ý´æ´¢·þÎñ¡£
 
 > EucalyptusÍ¨¹ýAgentµÄ·½Ê½À´¹ÜÀí¼ÆËã×ÊÔ´¡£ÔÚÃ¿Ò»¸ö¼ÆËã½ÚµãÉÏ£¬¶¼ÐèÒªÔËÐÐÒ»¸öeucalyptus-ncµÄ·þÎñ¡£¸Ã·þÎñÔÚ¼¯Èº¿ØÖÆÆ÷(CC)ÉÏ×¢²áºó£¬ÔÆ¿ØÖÆÆ÷(CLC)¼´¿ÉÍ¨¹ý¼¯Èº¿ØÖÆÆ÷(CLC)½«ÐèÒªÔËÐÐµÄÐéÄâ»úÓ³ÏñÎÄ¼þ(EMI)¿½±´µ½¸Ã¼ÆËã½ÚµãÉÏÔËÐÐ¡£
 
 > Eucalyptus½«ÐéÄâ»úÓ³ÏñÎÄ¼þ´æ´¢ÔÚWalrusÉÏ¡£µ±ÓÃ»§Æô¶¯Ò»¸öÐéÄâ»úÊµÀýµÄÊ±ºò£¬EucalyptusÊ×ÏÈ½«ÏàÓ¦µÄÐéÄâ»úÓ³Ïñ(EMI)´ÓWalrus¿½±´µ½½«ÒªÔËÐÐ¸ÃÊµÀýµÄ¼ÆËã½Úµã(NC)ÉÏ¡£µ±ÓÃ»§¹Ø±Õ(»òÕßÊÇÓÉÓÚÒâÍâ¶øÖØÆô)Ò»¸öÐéÄâ»úÊµÀýµÄÊ±ºò£¬¶ÔÐéÄâ»úËù×öµÄÐÞ¸Ä²¢²»»á±»Ð´»Øµ½WalrusÉÏÔ­À´µÄÐéÄâ»úÓ³Ïñ(EMI)ÉÏ£¬ËùÓÐ¶Ô¸ÃÐéÄâ»úµÄÐÞ¸Ä¶¼»á¶ªÊ§¡£Èç¹ûÓÃ»§ÐèÒª±£´æÐÞ¸Ä¹ýµÄÐéÄâ»ú£¬¾ÍÐèÒªÀûÓÃ¹¤¾ß(euca2ools)½«¸ÃÐéÄâ»úÊµÀý±£´æÎªÐÂµÄÐéÄâ»úÓ³Ïñ(EMI)¡£Èç¹ûÓÃ»§ÐèÒª±£´æÊý¾Ý£¬ÔòÐèÒªÀûÓÃ´æ´¢·þÎñÆ÷(SC)ËùÌá¹©µÄµ¯ÐÔ¿éÉè±¸À´Íê³É¡£
 
-- OpenStack¼Ü¹¹
+####OpenStack¼Ü¹¹####
+
 > OpenStackÊÇÒ»¸öÓëAmazon EC2¼æÈÝµÄIaaSÏµÍ³¡£OpenStack°üÀ¨OpenStack ComputeºÍOpenStack Object StorageÁ½¸ö²¿·Ö¡£
 
 > OpenStack ComputeÓÖ°üº¬WebÇ°¶Ë¡¢¼ÆËã·þÎñ¡¢´æ´¢·þÎñ¡¢Éí·ÝÈÏÖ¤·þÎñ¡¢´æ´¢¿éÉè±¸(¾í)·þÎñ¡¢ÍøÂç·þÎñ¡¢ÈÎÎñµ÷¶ÈµÈ¶à¸öÄ£¿é¡£OpenStack ComputeµÄ²»Í¬Ä£¿éÖ®¼ä²»¹²ÏíÈÎºÎÐÅÏ¢£¬Í¨¹ýÏûÏ¢´«µÝ½øÐÐÍ¨Ñ¶¡£Òò´Ë£¬²»Í¬µÄÄ£¿é¿ÉÒÔÔËÐÐÔÚ²»Í¬µÄ·þÎñÆ÷ÉÏ£¬Ò²¿ÉÒÔÔËÐÐÔÚÍ¬Ò»Ì¨·þÎñÆ÷ÉÏ¡£
@@ -179,11 +181,12 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 > OpenStackÍ¨¹ýAgentµÄ·½Ê½À´¹ÜÀí¼ÆËã×ÊÔ´¡£ÔÚÃ¿Ò»¸ö¼ÆËã½ÚµãÉÏ£¬¶¼ÐèÒªÔËÐÐnova-network·þÎñºÍnova-compute·þÎñ¡£ÕâÐ©·þÎñÆô¶¯Ö®ºó£¬¾Í¿ÉÒÔÍ¨¹ýÏûÏ¢¶ÓÁÐÀ´ÓëÔÆ¿ØÖÆÆ÷½øÐÐ½»»¥¡£
 
 
-##³É¹¦Ó¦ÓÃ¶Ô±È##
+###³É¹¦Ó¦ÓÃ¶Ô±È###
  
 >»ùÓÚÁ½Õß¹¦ÄÜ±È½ÏÖÐµÄ¸÷×ÔÌØÐÔ£¬Á½ÕßÔÚÐÐÒµÄÚ¶¼ÓÐ²»Í¬µÄ³É¹¦Ó¦ÓÃÆóÒµ¡£
 
--³É¹¦Ó¦ÓÃÆóÒµ
+####³É¹¦Ó¦ÓÃÆóÒµ####
+
 >Eucalyptus Ó¦ÓÃ²¿Êð·Ç³£¹ã·ºµÄË½ÓÐ»ù´¡ÉèÊ©¼´·þÎñÔÆÈí¼þÆ½Ì¨£¬¾ßÓÐ¸ß¿ÉÓÃÐÔIaas£¬Áé»îµØ¹ÜÀí¶à»úÆ÷¾µÏñ¸ñÊ½£¬Òì¹¹¶àÐéÄâ»ú¹ÜÀí£¬³ÉÊì¿É¿¿µÄSAN¼¯³É£¬Áé»îµÄÕÊÎñ¡¢Í³¼ÆºÍÅä¶î¹ÜÀíµÈÌØµã£¬ÔÚÆóÒµË½ÓÐÔÆ·½ÃæÒ²ÓÐºÜºÃµÄÓ¦ÓÃ
 > ³É¹¦Ó¦ÓÃÆóÒµ£ºÑÇÂíÑ·£¬Ë÷Äá£¬Puma£¬Ç÷ÊÆ¿Æ¼¼
  
@@ -201,9 +204,11 @@ OpenstackÏîÄ¿·¢Õ¹½Ï¿ì£¬Ò²µÃµ½ÁË½Ï¶à´óµÄ³§ÉÌÖ§³Ö¡£µ«openstackµÄÄ£¿é½á¹¹Ïà¶ÔËéÆ¬»¯
 ÍõÎÄÃ÷ ¹±Ï×¡±ÆäËû±È½Ï¡°²¿·Ö
 
 ³ÂÇí ¹±Ï×¡±ÏîÄ¿½éÉÜ£¬¹¦ÄÜ±È½Ï£¬½áÂÛ¡°²¿·Ö
+
 ÏÄÐ¡¸Õ ¹±Ï×"¼Ü¹¹±È½Ï" ²¿·Ö
 
 ¶Å»ªÇÈ ¹±Ï×¡°³É¹¦Ó¦ÓÃ±È½Ï¡±²¿·Ö## 
+
 ²Î¿¼×ÊÁÏ ##
 CloudStack¡¢OpenStackµÈËÄ´óÔÆÆ½Ì¨ÆÀ²â http://www.chinacloud.cn/show.aspx?id=12339&cid=16 
 
