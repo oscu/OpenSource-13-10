@@ -102,12 +102,12 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 <td>&nbsp;</td>
 </tr>
 </table>
+
 ## ÆäËû±È½Ï ##
 
-ÉçÇø°æ²ÉÓÃGPLv3ÊÚÈ¨Ð­Òé ÉçÇø°æ²»ÐèÒª°²×°Ðí¿É
 
-Ò»¡¢ÊÚÈ¨Ð­ÒéºÍÐí¿ÉÖ¤¹ÜÀí
--
+###ÊÚÈ¨Ð­ÒéºÍÐí¿ÉÖ¤¹ÜÀí###
+
 <table class="table table-bordered table-striped table-condensed">
 <tr>
 <th colspan="2"></th>
@@ -137,8 +137,8 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 </table>
 
 
-¶þ¡¢ÏîÄ¿ÀúÊ·¡¢ÔËÓªÍÅ¶Ó¡¢ÉçÇø¹æÄ£
-- 
+###ÏîÄ¿ÀúÊ·¡¢ÔËÓªÍÅ¶Ó¡¢ÉçÇø¹æÄ£###
+
 <table>
 <tr>
 <th></th>
@@ -160,9 +160,9 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 </tr>
 </table>
 
-###¼Ü¹¹·½ÃæµÄ±È½Ï###
-- 
-####Eucalyptus¼Ü¹¹#### 
+###¼Ü¹¹±È½Ï###
+
+- Eucalyptus¼Ü¹¹
 
 > EucalyptusÊÇÒ»¸öÓëAmazon EC2¼æÈÝµÄIaaSÏµÍ³¡£Eucalyptus°üÀ¨ÔÆ¿ØÖÆÆ÷(CLC)¡¢Walrus¡¢¼¯Èº¿ØÖÆÆ÷(CC)¡¢´æ´¢¿ØÖÆÆ÷(SC)ºÍ½Úµã¿ØÖÆÆ÷(NC)¡£CLCÊÇÕû¸öEucalyptuÏµÍ³µÄºËÐÄ£¬¸ºÔð¸ß²ã´ÎµÄ×ÊÔ´µ÷¶È£¬ÀýÈçÏòCCÇëÇó¼ÆËã×ÊÔ´¡£WalrusÊÇ Ò»¸öÓëAmazon S3ÀàËÆµÄ´æ´¢·þÎñ£¬Ö÷ÒªÓÃÓÚ´æ´¢ÐéÄâ»úÓ³ÏñºÍÓÃ»§Êý¾Ý¡£CCÊÇÒ»¸ö¼¯ÈºµÄÇ°¶Ë£¬¸ºÔðÐ­µ÷Ò»¸ö¼¯ÈºÄÚµÄ¼ÆËã×ÊÔ´£¬²¢ÇÒ¹ÜÀí¼¯ÈºÄÚµÄÍøÂçÁ÷Á¿¡£SCÊÇÒ»¸öÓëAmazon EBSÀàËÆµÄ´æ´¢¿éÉè±¸·þÎñ£¬¿ÉÒÔÓÃÀ´´æ´¢ÒµÎñÊý¾Ý¡£NCÊÇ×îÖÕµÄ¼ÆËã½Úµã£¬Í¨¹ýµ÷ÓÃ²Ù×÷ÏµÍ³²ãµÄÐéÄâ»¯¼¼ÊõÀ´Æô¶¯ºÍ¹Ø±ÕÐéÄâ»ú¡£ÔÚÍ¬Ò»¸ö¼¯Èº(CC)ÄÚµÄËùÓÐ¼ÆËã½Úµã(NC)±ØÐëÔÚÍ¬Ò»¸ö×ÓÍøÄÚ¡£ ÔÚÒ»¸ö¼¯Èº(CC)ÄÚÍ¨³£ÐèÒª²¿ÊðÒ»Ì¨´æ´¢·þÎñÆ÷(SC)£¬Îª¸Ã¼¯ÈºÄÚµÄ¼ÆËã½ÚµãÌá¹©Êý¾Ý´æ´¢·þÎñ¡£
 
@@ -170,7 +170,7 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 
 > Eucalyptus½«ÐéÄâ»úÓ³ÏñÎÄ¼þ´æ´¢ÔÚWalrusÉÏ¡£µ±ÓÃ»§Æô¶¯Ò»¸öÐéÄâ»úÊµÀýµÄÊ±ºò£¬EucalyptusÊ×ÏÈ½«ÏàÓ¦µÄÐéÄâ»úÓ³Ïñ(EMI)´ÓWalrus¿½±´µ½½«ÒªÔËÐÐ¸ÃÊµÀýµÄ¼ÆËã½Úµã(NC)ÉÏ¡£µ±ÓÃ»§¹Ø±Õ(»òÕßÊÇÓÉÓÚÒâÍâ¶øÖØÆô)Ò»¸öÐéÄâ»úÊµÀýµÄÊ±ºò£¬¶ÔÐéÄâ»úËù×öµÄÐÞ¸Ä²¢²»»á±»Ð´»Øµ½WalrusÉÏÔ­À´µÄÐéÄâ»úÓ³Ïñ(EMI)ÉÏ£¬ËùÓÐ¶Ô¸ÃÐéÄâ»úµÄÐÞ¸Ä¶¼»á¶ªÊ§¡£Èç¹ûÓÃ»§ÐèÒª±£´æÐÞ¸Ä¹ýµÄÐéÄâ»ú£¬¾ÍÐèÒªÀûÓÃ¹¤¾ß(euca2ools)½«¸ÃÐéÄâ»úÊµÀý±£´æÎªÐÂµÄÐéÄâ»úÓ³Ïñ(EMI)¡£Èç¹ûÓÃ»§ÐèÒª±£´æÊý¾Ý£¬ÔòÐèÒªÀûÓÃ´æ´¢·þÎñÆ÷(SC)ËùÌá¹©µÄµ¯ÐÔ¿éÉè±¸À´Íê³É¡£
 
-####OpenStack¼Ü¹¹####
+- OpenStack¼Ü¹¹
 
 > OpenStackÊÇÒ»¸öÓëAmazon EC2¼æÈÝµÄIaaSÏµÍ³¡£OpenStack°üÀ¨OpenStack ComputeºÍOpenStack Object StorageÁ½¸ö²¿·Ö¡£
 
@@ -187,13 +187,25 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 
 ####³É¹¦Ó¦ÓÃÆóÒµ####
 
+- EucalyptusµÄÓ¦ÓÃ
+
 >Eucalyptus Ó¦ÓÃ²¿Êð·Ç³£¹ã·ºµÄË½ÓÐ»ù´¡ÉèÊ©¼´·þÎñÔÆÈí¼þÆ½Ì¨£¬¾ßÓÐ¸ß¿ÉÓÃÐÔIaas£¬Áé»îµØ¹ÜÀí¶à»úÆ÷¾µÏñ¸ñÊ½£¬Òì¹¹¶àÐéÄâ»ú¹ÜÀí£¬³ÉÊì¿É¿¿µÄSAN¼¯³É£¬Áé»îµÄÕÊÎñ¡¢Í³¼ÆºÍÅä¶î¹ÜÀíµÈÌØµã£¬ÔÚÆóÒµË½ÓÐÔÆ·½ÃæÒ²ÓÐºÜºÃµÄÓ¦ÓÃ
+
 > ³É¹¦Ó¦ÓÃÆóÒµ£ºÑÇÂíÑ·£¬Ë÷Äá£¬Puma£¬Ç÷ÊÆ¿Æ¼¼
  
->OpenStack ÊÇÒ»¸öÔÆÆ½Ì¨¹ÜÀíÈí¼þ£¬¿ÉÒÔ¹ÜÀí¹«ÓÐÔÆ¡¢Ë½ÓÐÔÆºÍ»ìºÏÔÆ¼Ü¹¹£¬ÒòOpenStack¾ßÓÐÒÔÏÂÌØµã£º1.½Ó½üÓÃ»§£¬ÍêÈ«ÊµÏÖ¶¨ÖÆ»¯¡£ 2.±ÜÃâ³§ÉÌËø¶¨¡£ 3.Ê¹ÓÃ»ìºÏÔÆÉúÌ¬»·¾³¡£Ô½À´Ô½¶àµÄÆóÒµ¿ªÊ¼×ªÏòÊ¹ÓÃOpenStack¡£
+- OpenStackµÄÓ¦ÓÃ
+ 
+>OpenStack ÊÇÒ»¸öÔÆÆ½Ì¨¹ÜÀíÈí¼þ£¬¿ÉÒÔ¹ÜÀí¹«ÓÐÔÆ¡¢Ë½ÓÐÔÆºÍ»ìºÏÔÆ¼Ü¹¹£¬ÒòOpenStack¾ßÓÐÒÔÏÂÌØµã£º
+	1.½Ó½üÓÃ»§£¬ÍêÈ«ÊµÏÖ¶¨ÖÆ»¯¡£ 
+	2.±ÜÃâ³§ÉÌËø¶¨¡£ 
+	3.Ê¹ÓÃ»ìºÏÔÆÉúÌ¬»·¾³¡£
+>Òò´Ë,Ô½À´Ô½¶àµÄÆóÒµ¿ªÊ¼×ªÏòÊ¹ÓÃOpenStack¡£
+
 > ³É¹¦Ó¦ÓÃÆóÒµ£ºÃÀ¹ú¼Ò°²È«¾Ö£¬°ÙË¼Âò£¬PayPal,¿µ¿¨Ë¹ÌØ£¬ÐÂÀË£¬»ªÎª´æ´¢£¬»ªÊ¤Ìì³É£¬²©¿Æ£¬»ÝÆÕ£¬
 
+
 ## ½áºÏ×ÔÉíÐèÒªÆÀ¹ÀºóµÄ½áÂÛ ##
+
 EucalyptusµÄ¼Ü¹¹ÓÉÎå¸ö²¿·Ö×é³É£¬ÓëAWSÀàËÆ£¬°²×°ÄÑ¶ÈÎªÖÐµÈË®Æ½£¬ÆäGUI¹ÜÀí¹¦ÄÜÓÐÏÞ£¬ÐèÒª´óÁ¿À´×ÔÏàÓ¦ÃüÁîÐÐµÄ°ïÖú¡£´ËÍâ£¬Eucalyptus»¹ÓÐÒ»¸öÃÜÔ¿¹ÜÀí°²È«Ä£Ê½¡£ÔÚ¸ÃÄ£Ê½ÖÐ£¬Îå¸ö¼Ü¹¹×é¼þÐèÒª±Ë´Ë×¢²á¡£EucalyptusµÄÕûÌå¶È¸üºÃ¡£ÁíÍâ£¬Í¨¹ýCLC£¬Eucalyptus¿ÉÒÔÖ§³Ö¼¯ÈºµÄ¼¯Èº£¬ËùÒÔ£¬EucalyptusµÄÀ©Õ¹ÐÔ¸üÇ¿£¬¸üÈÝÒ×Âú×ãÒµÎñÀ©Õ¹µÄÐèÒª¡£
 
 OpenstackÏîÄ¿·¢Õ¹½Ï¿ì£¬Ò²µÃµ½ÁË½Ï¶à´óµÄ³§ÉÌÖ§³Ö¡£µ«openstackµÄÄ£¿é½á¹¹Ïà¶ÔËéÆ¬»¯£¬°²×°ÄÑ¶È½Ï¸ß£¬Î¬»¤ÃÅ¼÷½Ï¸ß£¬²»ÀûÓÚµ±Ç°ÔËÎ¬ÈËÔ±Ê¹ÓÃ¡£
