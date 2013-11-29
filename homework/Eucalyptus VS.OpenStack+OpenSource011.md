@@ -108,6 +108,7 @@ OpenstackÏîÄ¿°üÀ¨Èı¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 
 ###ÊÚÈ¨Ğ­ÒéºÍĞí¿ÉÖ¤¹ÜÀí###
 
+
 <table class="table table-bordered table-striped table-condensed">
 <tr>
 <th colspan="2"></th>
@@ -139,6 +140,7 @@ OpenstackÏîÄ¿°üÀ¨Èı¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 
 ###ÏîÄ¿ÀúÊ·¡¢ÔËÓªÍÅ¶Ó¡¢ÉçÇø¹æÄ£###
 
+
 <table>
 <tr>
 <th></th>
@@ -160,7 +162,9 @@ OpenstackÏîÄ¿°üÀ¨Èı¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 </tr>
 </table>
 
+
 ###¼Ü¹¹±È½Ï###
+
 
 - Eucalyptus¼Ü¹¹
 
@@ -222,6 +226,7 @@ OpenstackÏîÄ¿·¢Õ¹½Ï¿ì£¬Ò²µÃµ½ÁË½Ï¶à´óµÄ³§ÉÌÖ§³Ö¡£µ«openstackµÄÄ£¿é½á¹¹Ïà¶ÔËéÆ¬»¯
 ¶Å»ªÇÈ ¹±Ï×¡°³É¹¦Ó¦ÓÃ±È½Ï¡±²¿·Ö## 
 
 ²Î¿¼×ÊÁÏ ##
+
 CloudStack¡¢OpenStackµÈËÄ´óÔÆÆ½Ì¨ÆÀ²â http://www.chinacloud.cn/show.aspx?id=12339&cid=16 
 
 ÍñÙâÇåÑïµÄblog http://www.qyjohn.net/
