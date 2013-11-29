@@ -108,6 +108,7 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 
 ###ÊÚÈ¨Ð­ÒéºÍÐí¿ÉÖ¤¹ÜÀí###
 
+
 <table class="table table-bordered table-striped table-condensed">
 <tr>
 <th colspan="2"></th>
@@ -139,6 +140,7 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 
 ###ÏîÄ¿ÀúÊ·¡¢ÔËÓªÍÅ¶Ó¡¢ÉçÇø¹æÄ£###
 
+
 <table>
 <tr>
 <th></th>
@@ -160,7 +162,9 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 </tr>
 </table>
 
+
 ###¼Ü¹¹±È½Ï###
+
 
 - Eucalyptus¼Ü¹¹
 
@@ -185,7 +189,6 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
  
 >»ùÓÚÁ½Õß¹¦ÄÜ±È½ÏÖÐµÄ¸÷×ÔÌØÐÔ£¬Á½ÕßÔÚÐÐÒµÄÚ¶¼ÓÐ²»Í¬µÄ³É¹¦Ó¦ÓÃÆóÒµ¡£
 
-####³É¹¦Ó¦ÓÃÆóÒµ####
 
 - EucalyptusµÄÓ¦ÓÃ
 
@@ -196,9 +199,13 @@ OpenstackÏîÄ¿°üÀ¨Èý¸ö²úÆ·£ºNova £¨ÀàËÆÓÚÑÇÂíÑ·µÄEC2£©¡¢Swift £¨ÀàËÆÓÚÑÇÂíÑ·S3£©º
 - OpenStackµÄÓ¦ÓÃ
  
 >OpenStack ÊÇÒ»¸öÔÆÆ½Ì¨¹ÜÀíÈí¼þ£¬¿ÉÒÔ¹ÜÀí¹«ÓÐÔÆ¡¢Ë½ÓÐÔÆºÍ»ìºÏÔÆ¼Ü¹¹£¬ÒòOpenStack¾ßÓÐÒÔÏÂÌØµã£º
-	1.½Ó½üÓÃ»§£¬ÍêÈ«ÊµÏÖ¶¨ÖÆ»¯¡£ 
-	2.±ÜÃâ³§ÉÌËø¶¨¡£ 
-	3.Ê¹ÓÃ»ìºÏÔÆÉúÌ¬»·¾³¡£
+
+>-	1.½Ó½üÓÃ»§£¬ÍêÈ«ÊµÏÖ¶¨ÖÆ»¯¡£ 
+
+>-	2.±ÜÃâ³§ÉÌËø¶¨¡£ 
+
+>-	3.Ê¹ÓÃ»ìºÏÔÆÉúÌ¬»·¾³¡£
+
 >Òò´Ë,Ô½À´Ô½¶àµÄÆóÒµ¿ªÊ¼×ªÏòÊ¹ÓÃOpenStack¡£
 
 > ³É¹¦Ó¦ÓÃÆóÒµ£ºÃÀ¹ú¼Ò°²È«¾Ö£¬°ÙË¼Âò£¬PayPal,¿µ¿¨Ë¹ÌØ£¬ÐÂÀË£¬»ªÎª´æ´¢£¬»ªÊ¤Ìì³É£¬²©¿Æ£¬»ÝÆÕ£¬
@@ -222,6 +229,7 @@ OpenstackÏîÄ¿·¢Õ¹½Ï¿ì£¬Ò²µÃµ½ÁË½Ï¶à´óµÄ³§ÉÌÖ§³Ö¡£µ«openstackµÄÄ£¿é½á¹¹Ïà¶ÔËéÆ¬»¯
 ¶Å»ªÇÈ ¹±Ï×¡°³É¹¦Ó¦ÓÃ±È½Ï¡±²¿·Ö## 
 
 ²Î¿¼×ÊÁÏ ##
+
 CloudStack¡¢OpenStackµÈËÄ´óÔÆÆ½Ì¨ÆÀ²â http://www.chinacloud.cn/show.aspx?id=12339&cid=16 
 
 ÍñÙâÇåÑïµÄblog http://www.qyjohn.net/
