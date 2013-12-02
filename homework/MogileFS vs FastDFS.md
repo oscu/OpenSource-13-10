@@ -8,11 +8,11 @@
 ## 项目介绍 ##
 MogileFS、 FastDFS是两个分布式文件系统 DFS（Distributed File System）。DFS在云计算框架中属于存储层面，介绍如下：
 
-MogileFS
+### *MogileFS* ###
 
 MogileFS 是一个开源的分布式文件系统，用于组建分布式文件集群，由LiveJournal 旗下 Danga Interactive 公司开发，Danga 团队开发了包括 Memcached、MogileFS、Perlbal 等不错的开源项目：(注：Perlbal 是一个强大的 Perl 写的反向代理服务器)。目前国内使用 MogileFS 的有图片托管网站 yupoo 等。
 
-FastDFS：
+### *FastDFS：* ###
 
 FastDFS是一款类Google FS的开源分布式文件系统，它用纯C语言实现，支持Linux、FreeBSD、AIX等UNIX系统。它只能通过专有API对文件进行存取访问，不支持 POSIX接口方式，不能mount使用。准确地讲，Google FS以及FastDFS、mogileFS、HDFS、TFS等类Google FS都不是系统级的分布式文件系统，而是应用级的分布式文件存储服务。
 FastDFS是为互联网应用量身定做，充分考虑了冗余备份、负载均衡、线性扩容等机制，并注重高可用、高性能等指标。和现有的类 Google FS分布式文件系统相比，FastDFS的架构和设计理念有其独到之处，主要体现在轻量级、分组方式和对等结构三个方面。
@@ -20,9 +20,8 @@ FastDFS是为互联网应用量身定做，充分考虑了冗余备份、负载�
 
 ## 功能比较 ##
 
-   Mogile FS
-   
-MogileFS 是一个分布式文件存储的解决方案，它能够做到不需要特殊的核心组件、无单点失败、自动的文件复制、比RAID好多了、传输中立，无特殊协议(客户端可以通过NFS或HTTP来和MogileFS通 信)、简单的命名空间、不用共享任何东西、不需要RAID、不会碰到文件系统本身的不可知情况 等等优点。
+### *Mogile FS* ###
+MogileFS是一个分布式文件存储的解决方案，它能够做到不需要特殊的核心组件、无单点失败、自动的文件复制、比RAID好多了、传输中立，无特殊协议(客户端可以通过NFS或HTTP来和MogileFS通 信)、简单的命名空间、不用共享任何东西、不需要RAID、不会碰到文件系统本身的不可知情况 等等优点。
  Mogilefs分为几部分
 1. 数据库（MySQL）：你可以用 mogdbsetup程序来初始化数据库。数据库保存了Mogilefs的所有元数据，你可以单独拿数据库服务器来做，也可以跟其他程序跑在一起，数据库 部分非常重要，类似邮件系统的认证中心那么重要，如果这儿挂了，那么整个Mogilefs将处于不可用状态。因此最好是HA结构。
 2. 存储节点：mogstored 程序的启动将使本机成为一个存储节点。启动时默认去读/etc/mogilefs/mogstored.conf ，具体配置可以参考配置部分。mogstored启动后，便可以通过mogadm增加这台机器到cluster中。一台机器可以只运行一个 mogstored作为存储节点即可，也可以同时运行其他程序。
@@ -38,7 +37,7 @@ MogileFS不需要依靠昂贵的SAN来共享磁盘，每个机器只用维护好
 在MogileFS中的磁盘可以是做了RAID的也可以是没有，如果是为了安全性着想的话RAID没有必要买了，因为MogileFS已经提供了。
 在MogileFS中的存储节点的磁盘可以被格式化成多种格式（ext3,reiserFS等等）。MogilesFS会做自己内部目录的哈希，所以它不会碰到文件系统本身的一些限制，比如一个目录中的最大文件数。你可以放心的使用，不会碰到文件系统本身的不可知情况。
 
-FastDFS：
+### *FastDFS：* ###
 
 FastDFS是一个开源的分布式文件系统，她对文件进行管理，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合以文件为载体的在线服务，如相册网站、视频网站等等。
 FastDFS服务端有两个角色：跟踪器（tracker）和存储节点（storage）。跟踪器主要做调度工作，在访问上起负载均衡的作用。
