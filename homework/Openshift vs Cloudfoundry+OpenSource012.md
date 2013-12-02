@@ -143,7 +143,8 @@ Wiki百科：
 >>- [Pivotal CF Forums](http://support.cloudfoundry.com/home)
 >>- [GitHub](https://github.com/cloudfoundry/cf-release)
 
-###2. [架构比较](https://github.com/SampsonAmir/OpenSource-13-10/blob/master/homework/Architecture%20about%20OpenShift%20vs%20CloudFoundry%20.md) ###
+###2. 架构比较###
+>>- 详见[架构比较](https://github.com/SampsonAmir/OpenSource-13-10/blob/master/homework/Architecture%20about%20OpenShift%20vs%20CloudFoundry%20.md)
 
 ## 实际应用 ##
 
