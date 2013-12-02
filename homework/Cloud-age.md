@@ -2,9 +2,9 @@
 
   组名： 成员名称，id
   Cloud-age: 李国芳， lili6
-             王奎量 vfrankwang
-             陈鲁 loulou886
-             柴跃立
+             王奎量， vfrankwang
+             陈鲁， loulou886
+             柴跃立，ylchai
 
 ## 项目介绍 ##
     Hadoop VS.Storm
