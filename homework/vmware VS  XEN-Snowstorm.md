@@ -3,11 +3,12 @@
 组名： Snowstorm
     
 成员名称 ：    
+   
        王真 队长    wzfinish （vmware 功能对比）
    
        马永龙   （提供相关社区活跃度信息,其他信息汇总）
       
-      黄梦晞 （ 提供XEN 功能对比： MengxiHuang）
+       黄梦晞 （ 提供XEN 功能对比： MengxiHuang）
   
 
           
