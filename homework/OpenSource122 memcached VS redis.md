@@ -1,7 +1,6 @@
 # memcached VS redis #
 
-  组名：成员名称，id
-  OpenSource122：
+	OpenSource122：
   	刘健 ticnic
 	崔灿 finecci
 	石占伟
@@ -36,7 +35,7 @@ Redis是一个key-value存储系统。和Memcached类似，它支持存储的val
 Redis支持的客户端语言非常丰富，常用的计算机语言如C、C#、C++、Object-C、PHP、Python、Java、Perl、Lua、Erlang等均有可用的客户端来访问Redis服务器。
 
 #### 安装方法 ####
-Redis的安装非常方便，只需从http://redis.io/download获取源码，然后make && make install即可。默认情况下，Redis的服务器启动程序和客户端程序会安装到/usr/local/bin目录下。在启动Redis服务器时，我们需要为其指定一个配置文件，缺省情况下配置文件在Redis的源码目录下，文件名为redis.conf。
+Redis的安装非常方便，只需从[http://redis.io/download](http://redis.io/download)获取源码，然后make && make install即可。默认情况下，Redis的服务器启动程序和客户端程序会安装到/usr/local/bin目录下。在启动Redis服务器时，我们需要为其指定一个配置文件，缺省情况下配置文件在Redis的源码目录下，文件名为redis.conf。
 
 #### 使用单位 ####
 * 新浪
@@ -55,10 +54,10 @@ Redis的安装非常方便，只需从http://redis.io/download获取源码，然
 ## 结合自身需要评估后的结论 ##
 
 ## 组员贡献 ##
-刘健 ticnic 参与章节：整体结构、项目介绍
-崔灿 finecci 参与章节：
-石占伟 参与章节：
-任峰杰 参与章节：                                                            
+* 刘健 ticnic 参与章节：整体结构、项目介绍
+* 崔灿 finecci 参与章节：
+* 石占伟 参与章节：
+* 任峰杰 参与章节：                                                            
 
 ## 参考资料 ##
 * [百度百科](http://baike.baidu.com/)
