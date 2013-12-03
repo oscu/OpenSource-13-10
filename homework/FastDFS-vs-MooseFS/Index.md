@@ -17,7 +17,7 @@ DFS在云计算框架中属于IaaS存储层面，介绍如下
 # 评估内容： #
 
 ## 项目介绍 ##
-- [MooseFS](/Introduction_MooseFS.md)
+- [MooseFS](Introduction_MooseFS.md)
 
 
 - [FastDFS](https://github.com/watanuoli/OpenSource-13-10/blob/master/homework/Introcuction_FastDFS.md)
