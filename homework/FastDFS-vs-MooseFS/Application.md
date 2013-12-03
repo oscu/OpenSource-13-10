@@ -3,7 +3,7 @@
 ## MooseFS 
 官方地图标注了MooseFS的地理分布
 [Who is using MooseFS](http://www.moosefs.org/who-is-using-moosefs.html)   
-![](https://github.com/watanuoli/OpenSource-13-10/blob/master/homework/Who%20is%20using%20MooseFS.png)  
+![](Who%20is%20using%20MooseFS.png)  
 国内豆瓣在用
 
 ## FastDFS ##
