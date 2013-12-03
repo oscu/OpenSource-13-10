@@ -55,7 +55,7 @@ Redis的安装非常方便，只需从[http://redis.io/download](http://redis.io
 
 ## 组员贡献 ##
 * 刘健 ticnic 参与章节：整体结构、项目介绍
-* 崔灿 finecci 参与章节：
+* 崔灿 finecci 参与章节：功能比较
 * 石占伟 参与章节：
 * 任峰杰 参与章节：                                                            
 
