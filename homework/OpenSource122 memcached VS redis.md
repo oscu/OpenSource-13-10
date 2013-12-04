@@ -89,7 +89,7 @@ Redis的安装非常方便，只需从[http://redis.io/download](http://redis.io
 * 刘健 ticnic 参与章节：整体结构、项目介绍
 * 崔灿 finecci 参与章节：功能比较
 * 石占伟 参与章节：
-* 任峰杰 参与章节：其他比较                                                            
+* 任峰杰 renfj2006 参与章节：其他比较                                                            
 
 ## 参考资料 ##
 * [百度百科](http://baike.baidu.com/)
