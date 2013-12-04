@@ -4,7 +4,7 @@
   	刘健 ticnic
 	崔灿 finecci
 	石占伟
-	任峰杰
+	任峰杰 renfj2006
 
 ## 项目介绍 ##
 ### memcached ###
