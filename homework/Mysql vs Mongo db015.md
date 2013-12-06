@@ -4,8 +4,8 @@ Mysql vs Mongo db015.md
 成员：
 
 * 张军
-* 张英明(yingming19851028)
-* 齐驱(qiqu338183)
+* 张英明([yingming19851028](https://github.com/yingming19851028))
+* 齐驱([qiqu338183](https://github.com/qiqu338183))
 * 程飞([dj99fei](https://github.com/dj99fei))
 
 ###新一代云门户项目介绍
