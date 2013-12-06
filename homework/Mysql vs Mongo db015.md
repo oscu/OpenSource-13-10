@@ -214,4 +214,4 @@ Mysql vs Mongo db015.md
 
 新一代云门户Mysql备份采用全备与增备结合，生产环境中mysql的全备有数据点2处分别以双主双备高可用架构。  该架构由4台主机组成，分为两个master,两个slave, 在同一时刻，Master_1与  Master_2只有一台主机向外提供”write服务”，并且Master_1 与Master_2    双向复制，4台机器可以同时向外提供”read服务”。
 
-![image](../images/Mysql_mongo1.png)
+![image](https://github.com/dj99fei/OpenSource-13-10/blob/master/homework/images/Mysql_mongo1.png?raw=true)
