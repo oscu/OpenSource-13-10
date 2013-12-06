@@ -215,3 +215,15 @@ Mysql vs Mongo db015.md
 新一代云门户Mysql备份采用全备与增备结合，生产环境中mysql的全备有数据点2处分别以双主双备高可用架构。  该架构由4台主机组成，分为两个master,两个slave, 在同一时刻，Master_1与  Master_2只有一台主机向外提供”write服务”，并且Master_1 与Master_2    双向复制，4台机器可以同时向外提供”read服务”。
 
 <center>![image](https://github.com/dj99fei/OpenSource-13-10/blob/master/homework/images/Mysql_mongo1.png?raw=true)</center>
+
+加上自行编写的备份脚本，达到统一备份，统一归档，也可以根据自己的业务繁忙程度自行调整备份策略，分离业务繁忙时的读写功能。另一方面，在mysql的前端还部署了memcache,将经常读取的数据直接放入内存中,使得读取速度更加有效的提升。
+
+对于新一代云门户采用web2.0技术特点，所采用的mongodb使用了分布式集群架构，MongoDB 集群中包含一个自动分片模块 ("mongos"). 自动分片可以用于构建一个大规模的可扩展的数据库集群,这个集群可以并入动态增加的机器。自动建立一个水平扩展的数据库集群系统，将数据库分表存储在 sharding的各个节点上。在一个mongodb的集群中包括一些shards(mongod进程)，mongos的路由进程，一个或多个 config服务器。sharding是一种对大规模数据存储的一种策略。也许有人会问，为什么需要做这种策略，因为在一个大型系统中最后的瓶颈会落在网络的带宽和磁盘的读写上，如果将数据分布在多个机器上的多个磁盘上，将会系统数据的处理能有所提高集群的构成。
+
+* Shard server：mongod实例，用于存储实际的数据块
+* Config server：mongod实例，用于存储整个Cluster Metadata，其中包括chunk信息。
+* Route server：mongos实例，做为整个集群的前端路由，整个集群由此接入。从而让整个集群看着像单一进程数据库。
+* 备 注：route做为路由会将请求转发到实际的目标服务进程，并将多个结果合并并回传客户端。在route并不存储任何的数据和状态，所有的信息都是启动的 时候从Config server上获取，当Config server上有信息更新，也会同步到route server上。 
+
+
+![image](https://github.com/dj99fei/OpenSource-13-10/blob/master/homework/images/Mysql_mongo2.png?raw=true)
