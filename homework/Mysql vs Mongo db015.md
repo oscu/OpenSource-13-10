@@ -6,7 +6,7 @@ Mysql vs Mongo db015.md
 * 张军
 * 张英明(yingming19851028)
 * 齐驱(qiqu338183)
-* 程飞(dj99fei)
+* 程飞([dj99fei](https://github.com/dj99fei))
 
 ###新一代云门户项目介绍
 
