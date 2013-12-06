@@ -227,3 +227,10 @@ Mysql vs Mongo db015.md
 
 
 ![image](https://github.com/dj99fei/OpenSource-13-10/blob/master/homework/images/Mysql_mongo2.png?raw=true)
+
+###成员分工
+
+* 张军：介绍
+* 张英明：云门户成功应用案例
+* 齐驱：数据库层功能比较
+* 程飞：数据库层功能比较
