@@ -2,21 +2,52 @@
 
   **组名：**DFS-008   
 
-  **成员：**丁进福 dingjinfu、岳大炯moonblue333、王文波 conanbob、雷冬 ldkof99
+  **成员：**
+  
+         丁进福 dingjinfu
+         岳大炯 moonblue333
+		 王文波 conanbob
+		 雷冬 ldkof99
    
 
 ## 项目介绍 ##
-MogileFS、 FastDFS是两个分布式文件系统 DFS（Distributed File System）。DFS在云计算框架中属于存储层面，介绍如下：
+MogileFS、 FastDFS是两个分布式文件系统 DFS（Distributed File System）。DFS在云计算框架中属于**存储层面**，介绍如下：
 
 ### *MogileFS* ###
 
 MogileFS 是一个开源的分布式文件系统，用于组建分布式文件集群，由LiveJournal 旗下 Danga Interactive 公司开发，Danga 团队开发了包括 Memcached、MogileFS、Perlbal 等不错的开源项目：(注：Perlbal 是一个强大的 Perl 写的反向代理服务器)。目前国内使用 MogileFS 的有图片托管网站 yupoo 等。
 
-### *FastDFS：* ###
+### *FastDFS* ###
 
 FastDFS是一款类Google FS的开源分布式文件系统，它用纯C语言实现，支持Linux、FreeBSD、AIX等UNIX系统。它只能通过专有API对文件进行存取访问，不支持 POSIX接口方式，不能mount使用。准确地讲，Google FS以及FastDFS、mogileFS、HDFS、TFS等类Google FS都不是系统级的分布式文件系统，而是应用级的分布式文件存储服务。
-FastDFS是为互联网应用量身定做，充分考虑了冗余备份、负载均衡、线性扩容等机制，并注重高可用、高性能等指标。和现有的类 Google FS分布式文件系统相比，FastDFS的架构和设计理念有其独到之处，主要体现在轻量级、分组方式和对等结构三个方面。
+FastDFS是为互联网应用量身定做，充分考虑了冗余备份、负载均衡、线性扩容等机制，并注重高可用、高性能等指标。和现有的类 Google FS分布式文件系统相比，FastDFS的架构和设计理念有其独到之处，主要体现在**轻量级**、**分组方式**和**对等结构**三个方面。
 
+##系统结构##
+
+### *FastDFS系统结构* ###
+
+FastDFS系统结构如下图所示：
+
+![Resize icon][1]
+
+[1]:http://images.51cto.com/files/uploadimg/20121011/1437560.jpg "FastDFS系统结构"
+
+跟踪器和存储节点都可以由一台多台服务器构成。跟踪器和存储节点中的服务器均可以随时增加或下线而不会影响线上服务。其中跟踪器中的所有服务器都是对等的，可以根据服务器的压力情况随时增加或减少。
+
+为了支持大容量，存储节点（服务器）采用了分卷（或分组）的组织方式。存储系统由一个或多个卷组成，卷与卷之间的文件是相互独立的，所有卷的文件容量累加就是整个存储系统中的文件容量。一个卷可以由一台或多台存储服务器组成，一个卷下的存储服务器中的文件都是相同的，卷中的多台存储服务器起到了冗余备份和负载均衡的作用。
+
+### *MogileFS系统结构* ###
+
+MogileFS系统结构如下图所示：
+
+![Resize icon][2]
+
+[2]:http://www.php-oa.com/wp-content/uploads/mogilefs1.jpg "MogileFS系统结构"
+
+MogileFS的三个大的部分,Tracker(Database) , Storage Nodes 和 Client 组成.有二个服务进程 MogileFSd 和 mogstored .
+
+工作原理如图:
+客户端.连接到一个域,然后在域中拿着文件的 key 来查文件的位置,然后通过查到集群中的位置来打开这个文件.
 
 ## 功能比较 ##
 
@@ -37,7 +68,7 @@ MogileFS不需要依靠昂贵的SAN来共享磁盘，每个机器只用维护好
 在MogileFS中的磁盘可以是做了RAID的也可以是没有，如果是为了安全性着想的话RAID没有必要买了，因为MogileFS已经提供了。
 在MogileFS中的存储节点的磁盘可以被格式化成多种格式（ext3,reiserFS等等）。MogilesFS会做自己内部目录的哈希，所以它不会碰到文件系统本身的一些限制，比如一个目录中的最大文件数。你可以放心的使用，不会碰到文件系统本身的不可知情况。
 
-### *FastDFS：* ###
+### *FastDFS* ###
 
 FastDFS是一个开源的分布式文件系统，她对文件进行管理，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合以文件为载体的在线服务，如相册网站、视频网站等等。
 FastDFS服务端有两个角色：跟踪器（tracker）和存储节点（storage）。跟踪器主要做调度工作，在访问上起负载均衡的作用。
@@ -131,9 +162,10 @@ FastDFS中的文件标识分为两个部分：卷名和文件名，二者缺一�
 
 
 ## 组员贡献 ##
-丁进福创建主干，岳大炯对其进行修改补充，并对其它比较进行表格对比。王文波以及雷冬进行相关资料的收集。
+丁进福创建主干，岳大炯对其进行修改补充，并对其它比较进行表格对比。雷冬在此基础上补充内容及调整格式，并增加了对比图片。王文波进行相关资料的收集。
 
 ## 参考资料 ##
 1.	MogileFS 一个开源的分布式文件系统http://bbs.chinaunix.net/thread-1235868-1-1.html
 2.	分布式文件系统 MogileFS 安装手册http://bbs.chinaunix.net/thread-1976725-1-1.html
 3.	FastDFS一个高效的分布式文件系统http://bbs.chinaunix.net/thread-2001101-1-1.html
+4.  开源分布式文件系统FastDFS和MogileFS对比http://os.51cto.com/art/201210/359861.htm
