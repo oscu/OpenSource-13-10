@@ -1,7 +1,8 @@
 ﻿组名:OpenSource9527
 
     孟凡胜 mengfanshengBUAAGY4
-    武俊峰 jeffrey5  郝玉飞  
+    武俊峰 jeffrey5  
+    郝玉飞  
 
 ##1  综述 ##
 计算机软件与硬件技术的飞速发展也导致了计算模型的不断演化。继分布式计算，并行计算，网络计算，效用计算，Web 2.0等计算概念与模型的不断被推出以后，计算机工业界与学术界又提出了云计算模型[2]，在某种意义上实现对这些计算概念与模型的泛化与商业化。总体上来讲，云计算通过互联网将超大规模的计算与存储资源整合起来，并以可信服务的形式按需提供给用户。
@@ -83,14 +84,12 @@ Amazon EC2的一个开源实现，与商业服务接口兼容，依赖于Linux�
 ##4	社区活跃度比较##
  云计算拥有无限潜力有待人们开发挖掘，云计算的发展将给信息社会的发展带来历史性的飞跃，本文在介绍云计算及云计算平台构架的基础上，总结分析了当前主要的开源云计算平台的特征，通过简单的对比和初步分析，得出：Abiquo公司的abiCloud, abiNtense和abiData都可以用来架构和开发公有私有混合云，其中AbiCloud较之同类其他产品的一个主要的区别在于其强大的Web界面管理。abiNtense可减少大量高性能计算的执行时间。而abiData是一种低成本的云存储解决方案；Eucalyptus有EC2的类似功能和接口； 10gen MongoDB可用于创建自己的私有云，类似于App Engine的一个软件栈，提供与App Engine 类似的功能。
 
+##  组员贡献 ##
+孟凡胜： 项目介绍 功能比较  武俊峰：功能比较 郝玉飞：功能比较
+
 ## 参考资料 ##
 [1] Boss G, Malladi P, Quan D, Legregni L, Hall H. Cloud computing. IBM White Paper, 2007.    
 [2]GannonD.HeadintheeloudsJl.Nature，2007，449    
 [3]人才芯片工程 http://www.lupaworld.com/article-209670-1.html    
 [4]开源云计算平台比较http://wenku.baidu.com    
 [5]百度百科http://baike.baidu.com/link?url=OLtbbjF8KFKboitaBzyG-9dqTb_XbChI0rAsjqDR7TpKSp9vNxpJydy1m_IbPCMmWT_wH9_rzZOe8CHigJh0Fa
-
-
-
-##  组员贡献 ##
-孟凡胜： 项目介绍 功能比较  武俊峰：功能比较 郝玉飞：功能比较
