@@ -21,19 +21,19 @@ DFS在云计算框架中属于IaaS存储层面，介绍如下
 # 评估内容： #
 
 ## 项目介绍 ##
-- [MooseFS](https://github.com/watanuoli/OpenSource-13-10/blob/master/homework/Introduction_MooseFS.md)
+- [MooseFS](https://github.com/maxinpony/OpenSource-13-10/blob/master/homework/Introduction_MooseFS.md)
 
 
-- [FastDFS](https://github.com/watanuoli/OpenSource-13-10/blob/master/homework/Introcuction_FastDFS.md)
+- [FastDFS](https://github.com/maxinpony/OpenSource-13-10/blob/master/homework/Introcuction_FastDFS.md)
  
-## [功能点对比分析](https://github.com/watanuoli/OpenSource-13-10/blob/master/homework/Comparison.md)   
+## [功能点对比分析](https://github.com/maxinpony/OpenSource-13-10/blob/master/homework/Comparison.md)   
   
 
 
-## [社区活跃程度对比](https://github.com/watanuoli/OpenSource-13-10/blob/master/homework/Community.md)   
+## [社区活跃程度对比](https://github.com/maxinpony/OpenSource-13-10/blob/master/homework/Community.md)   
 
 
-## [应用](https://github.com/watanuoli/OpenSource-13-10/blob/master/homework/Application.md)  
+## [应用](https://github.com/maxinpony/OpenSource-13-10/blob/master/homework/Application.md)  
 
 ## 组员贡献 ##
 马鑫： 题目介绍、项目介绍
