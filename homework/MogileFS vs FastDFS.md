@@ -65,8 +65,8 @@ FastDFS中的文件标识分为两个部分：卷名和文件名，二者缺一�
 	<tr align="center">
 		<td><strong>序号</strong></td>
 		<td><strong>指标</strong></td>
-		<td><strong>MogileFS</strong></td>
 		<td><strong>FastDFS</strong></td>
+		<td><strong>MogileFS</strong></td>
 	</tr>
 	<tr>
 		<td>1</td>
